@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>void Image Viewer 汉化包方案</title>
+<style>
+:root{
+  --ink:#1b2430; --ink2:#3d4a5c; --muted:#6b7a8d; --line:#dde4ee;
+  --bg:#f6f8fb; --card:#ffffff; --brand:#1f4e79; --brand2:#2d6ca8;
+  --ok:#0f7b52; --warn:#a8620a; --bad:#b03030; --chip:#eef3fa;
+  --mono:"Cascadia Mono",Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:32px 20px 72px;
+  font:15px/1.75 "Microsoft YaHei UI","Microsoft YaHei","PingFang SC","HarmonyOS Sans SC",system-ui,sans-serif;
+  color:var(--ink); background:var(--bg);
+}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:26px;line-height:1.3;margin:0 0 6px;letter-spacing:.3px}
+h2{font-size:19px;margin:44px 0 14px;padding-left:12px;border-left:4px solid var(--brand);line-height:1.4}
+h3{font-size:16px;margin:26px 0 10px;color:var(--brand)}
+h4{font-size:14.5px;margin:18px 0 8px;color:var(--ink2)}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:5px 0}
+code{font-family:var(--mono);font-size:.9em;background:#eef1f6;border:1px solid #e0e6ef;
+     border-radius:4px;padding:1px 5px;color:#0d3c63;word-break:break-all}
+pre{font-family:var(--mono);font-size:12.5px;line-height:1.6;background:#101c2b;color:#d8e4f2;
+    padding:14px 16px;border-radius:8px;overflow-x:auto;margin:12px 0}
+pre .c{color:#7f96b0}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--card);
+      border-radius:8px;overflow:hidden;box-shadow:0 1px 2px rgba(20,40,70,.06)}
+th,td{border-bottom:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:#eef3fa;font-weight:600;color:var(--brand);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#f8fafd}
+.sub{color:var(--muted);font-size:13.5px;margin:0 0 4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:16px 0;
+      box-shadow:0 1px 3px rgba(20,40,70,.05)}
+.card.tip{border-left:4px solid var(--brand2)}
+.card.warn{border-left:4px solid var(--warn);background:#fffbf3}
+.card.bad{border-left:4px solid var(--bad);background:#fff6f6}
+.card.ok{border-left:4px solid var(--ok);background:#f4fbf7}
+.tag{display:inline-block;font-size:11.5px;line-height:1.6;padding:1px 8px;border-radius:20px;
+     background:var(--chip);color:var(--brand);border:1px solid #d6e2f2;margin-right:6px;white-space:nowrap}
+.tag.ok{background:#e8f6ef;color:var(--ok);border-color:#c9e8da}
+.tag.bad{background:#fdeeee;color:var(--bad);border-color:#f4d2d2}
+.tag.warn{background:#fdf3e3;color:var(--warn);border-color:#f2e0c2}
+.mono{font-family:var(--mono);font-size:.9em}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+.lead{font-size:15.5px;color:var(--ink2);background:var(--card);border:1px solid var(--line);
+      border-radius:10px;padding:16px 20px;margin:18px 0}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:6px 16px;font-size:13.5px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+figure{margin:18px 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+figcaption{font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center}
+svg{display:block;width:100%;height:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>void Image Viewer 汉化包方案</h1>
+<p class="sub">「单文件替换」式本地化补丁 · 设计与实测说明 &nbsp;|&nbsp; 2026-09-21</p>
+
+<div class="lead">
+<b>一句话结论：</b>本程序可用的「单文件替换」落点只有一个 —— 安装目录里的
+<b>主程序 <code>voidImageViewer.exe</code> 本身</b>。外挂 DLL、代理 DLL、语言文件这三条更省事的路，
+经实测<b>全部不可行</b>（下文给出注册表与对照实验证据）。因此方案定为：
+<b>交付一个体积不变、只需覆盖同名 exe 的汉化版二进制</b>，并配套一个
+<b>「版本自适应重建器」</b>解决升级后的重新生成问题。
+</div>
+
+<h2>0. 先排除掉走不通的路（实测证据）</h2>
+
+<p>「替换单个文件即完成汉化」最自然的实现是外挂一个 DLL。但这条路在本程序上被三层机制封死，逐条实测如下。</p>
+
+<table>
+<thead><tr><th style="width:150px">候选路径</th><th style="width:90px">结论</th><th>实测依据</th></tr></thead>
+<tbody>
+<tr>
+  <td>exe 目录<br>代理 DLL 劫持</td>
+  <td><span class="tag bad">不可行</span></td>
+  <td>程序导入 9 个 DLL：<span class="mono">COMCTL32 / SHLWAPI / KERNEL32 / USER32 / GDI32 / comdlg32 / ADVAPI32 / SHELL32 / ole32</span>。
+      其中 8 个在注册表 <span class="mono">HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\KnownDLLs</span> 名单内
+      （已读取本机名单确认：<span class="mono">kernel32.dll, advapi32.dll, COMDLG32.dll, gdi32.dll, ole32.dll,
+      SHELL32.dll, SHLWAPI.dll, user32.dll</span> 均在册）。KnownDLL 一律从系统目录加载，<b>目录内同名文件不会被搜索</b>。</td>
+</tr>
+<tr>
+  <td>劫持 <span class="mono">COMCTL32.dll</span><br>（唯一非 KnownDLL）</td>
+  <td><span class="tag bad">不可行</span></td>
+  <td>COMCTL32 确实不在 KnownDLLs 名单内，但程序内嵌清单里有：
+      <span class="mono">&lt;dependency&gt;…name="Microsoft.Windows.Common-Controls" version="6.0.0.0"
+      publicKeyToken="6595b64144ccf1df"…</span>。
+      该 SxS 依赖使 COMCTL32 经<b>激活上下文从 WinSxS 加载</b>，绕开 exe 目录搜索顺序。</td>
+</tr>
+<tr>
+  <td><span class="mono">app.exe.local</span><br>DLL 重定向</td>
+  <td><span class="tag bad">不可行</span></td>
+  <td>做了对照实验：把原版 exe 复制到临时目录，放入<b>内容为纯文本的伪造 <span class="mono">COMCTL32.dll</span></b>，
+      分别在不加 / 加空文件 <span class="mono">voidImageViewer.exe.local</span> 两种情况下启动。
+      两次都<b>正常创建主窗口并运行</b>（均为 4 个顶层窗口），说明伪造 DLL 被忽略，重定向未生效。</td>
+</tr>
+<tr>
+  <td>延迟导入重定向</td>
+  <td><span class="tag bad">不可行</span></td>
+  <td>PE 数据目录 <span class="mono">DelayImport</span> 的 RVA 与 Size 均为 0 —— 程序<b>没有延迟导入表</b>可供替换。</td>
+</tr>
+<tr>
+  <td>导出转发<br>（无导出目录）</td>
+  <td><span class="tag bad">不可行</span></td>
+  <td><span class="mono">Export</span> 目录 RVA = 0，程序不导出任何符号，无法做转发层。</td>
+</tr>
+<tr>
+  <td>独立语言文件</td>
+  <td><span class="tag bad">不可行</span></td>
+  <td>非 Qt / 非 Electron / 非 .NET，界面文本直接内嵌在 <span class="mono">.data</span> 字符串池与 <span class="mono">.rsrc</span> 对话框资源中，
+      程序不提供任何语言包加载入口（导入表中无相关 API，字符串池亦无 <em>Language</em> 类设置项）。</td>
+</tr>
+<tr>
+  <td>注册表注入<br><span class="mono">AppInit_DLLs / IFEO</span></td>
+  <td><span class="tag warn">可行但不选</span></td>
+  <td>技术上能实现全局注入，但<b>已不属于「替换文件」</b>：需改注册表、需管理员、对全系统进程生效，
+      且是主流杀软 / EDR 的重点拦截对象。</td>
+</tr>
+</tbody>
+</table>
+
+<div class="card bad">
+<b>由此确定：</b>唯一满足「只替换一个文件」且不动注册表的落点，就是主程序 exe 本身。
+</div>
+
+<h2>1. 汉化文件的生成方式</h2>
+
+<p>生成物是一个 <b>x64 原生 PE 二进制</b>：在保留原版全部代码与资源的前提下，追加一个
+<b>新的可执行节 <code>.cnstr</code></b> 存放 UTF-8 中文，并把原本指向英文的引用改指向新节。
+整体分五步，全部由 <code>rebuild_cn.py</code> 自动完成。</p>
+
+<figure>
+<svg viewBox="0 0 680 246" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="汉化生成流程">
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#8ba3bf"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="246" fill="#ffffff"/>
+  <g font-family="Microsoft YaHei UI, sans-serif" font-size="11.5">
+    <!-- 输入 -->
+    <rect x="14" y="96" width="104" height="54" rx="8" fill="#eef3fa" stroke="#c9d8ea"/>
+    <text x="66" y="118" text-anchor="middle" fill="#1f4e79" font-weight="700">原版 exe</text>
+    <text x="66" y="136" text-anchor="middle" fill="#6b7a8d" font-size="10.5">378,536 B</text>
+
+    <!-- 五步 -->
+    <g>
+      <rect x="146" y="18" width="118" height="52" rx="8" fill="#f4f8fd" stroke="#c9d8ea"/>
+      <text x="205" y="38" text-anchor="middle" fill="#1f4e79" font-weight="700">① 内容签名定位</text>
+      <text x="205" y="55" text-anchor="middle" fill="#6b7a8d" font-size="10">字符串 / 引用 / 代码模板</text>
+
+      <rect x="146" y="80" width="118" height="52" rx="8" fill="#f4f8fd" stroke="#c9d8ea"/>
+      <text x="205" y="100" text-anchor="middle" fill="#1f4e79" font-weight="700">② 译文重定位</text>
+      <text x="205" y="117" text-anchor="middle" fill="#6b7a8d" font-size="10">改指针 / 改 LEA 位移</text>
+
+      <rect x="146" y="142" width="118" height="52" rx="8" fill="#f4f8fd" stroke="#c9d8ea"/>
+      <text x="205" y="162" text-anchor="middle" fill="#1f4e79" font-weight="700">③ 挂钩修复</text>
+      <text x="205" y="179" text-anchor="middle" fill="#6b7a8d" font-size="10">5 处拓宽循环 → 代码洞</text>
+
+      <rect x="146" y="204" width="118" height="40" rx="8" fill="#f4f8fd" stroke="#c9d8ea"/>
+      <text x="205" y="229" text-anchor="middle" fill="#1f4e79" font-weight="700">④ 资源重建</text>
+
+      <rect x="290" y="18" width="118" height="52" rx="8" fill="#f4f8fd" stroke="#c9d8ea"/>
+      <text x="349" y="38" text-anchor="middle" fill="#1f4e79" font-weight="700">⑤ 布局与收尾</text>
+      <text x="349" y="55" text-anchor="middle" fill="#6b7a8d" font-size="10">节头/校验和/签名搬运</text>
+    </g>
+
+    <!-- 中间产物 -->
+    <rect x="286" y="86" width="126" height="108" rx="8" fill="#fdf6e8" stroke="#eddcbb"/>
+    <text x="349" y="106" text-anchor="middle" fill="#a8620a" font-weight="700">辅助数据</text>
+    <text x="349" y="124" text-anchor="middle" fill="#6b7a8d" font-size="10">翻译表 223 条</text>
+    <text x="349" y="140" text-anchor="middle" fill="#6b7a8d" font-size="10">字符映射 1093 条</text>
+    <text x="349" y="156" text-anchor="middle" fill="#6b7a8d" font-size="10">引用索引 197 目标</text>
+    <text x="349" y="172" text-anchor="middle" fill="#6b7a8d" font-size="10">模板指纹 2 组</text>
+
+    <!-- 输出 -->
+    <rect x="446" y="86" width="112" height="66" rx="8" fill="#e9f6ef" stroke="#c4e5d4"/>
+    <text x="502" y="108" text-anchor="middle" fill="#0f7b52" font-weight="700">汉化版 exe</text>
+    <text x="502" y="126" text-anchor="middle" fill="#6b7a8d" font-size="10">383,144 B</text>
+    <text x="502" y="142" text-anchor="middle" fill="#6b7a8d" font-size="10">新增 .cnstr 节</text>
+
+    <rect x="578" y="86" width="88" height="66" rx="8" fill="#eef3fa" stroke="#c9d8ea"/>
+    <text x="622" y="112" text-anchor="middle" fill="#1f4e79" font-weight="700">覆盖到</text>
+    <text x="622" y="130" text-anchor="middle" fill="#1f4e79" font-weight="700">安装目录</text>
+
+    <!-- 连线 -->
+    <path d="M118,123 L146,123" stroke="#8ba3bf" fill="none" marker-end="url(#ar)"/>
+    <path d="M205,70 L205,80" stroke="#8ba3bf" fill="none" marker-end="url(#ar)"/>
+    <path d="M205,132 L205,142" stroke="#8ba3bf" fill="none" marker-end="url(#ar)"/>
+    <path d="M205,194 L205,204" stroke="#8ba3bf" fill="none" marker-end="url(#ar)"/>
+    <path d="M264,224 L272,224 L272,44 L290,44" stroke="#8ba3bf" fill="none" marker-end="url(#ar)"/>
+    <path d="M412,44 L424,44 L424,119 L446,119" stroke="#8ba3bf" fill="none" marker-end="url(#ar)"/>
+    <path d="M349,72 L349,86" stroke="#c9b78a" fill="none" marker-end="url(#ar)"/>
+    <path d="M558,119 L578,119" stroke="#8ba3bf" fill="none" marker-end="url(#ar)"/>
+  </g>
+</svg>
+<figcaption>图 1　汉化二进制生成流程（rebuild_cn.py 内部五步）</figcaption>
+</figure>
+
+<h3>1.1 核心：把「硬编码地址」换成「内容签名」</h3>
+
+<p>旧构建器把 145 个绝对指针、54 处 LEA、5 处循环的地址全部写死在数据文件里，
+程序一升级就全部失效。新方案改为<b>按内容/形状现场定位</b>：</p>
+
+<table>
+<thead><tr><th style="width:132px">定位项</th><th style="width:210px">定位手段</th><th>为什么跨版本稳定</th></tr></thead>
+<tbody>
+<tr>
+  <td>待翻译字符串</td>
+  <td>扫描 <span class="mono">.rdata / .data</span> 的 <b>NUL 结尾 ASCII 串</b>与 <b>UTF-16 串</b>，
+      建「文本 → 地址」索引，再用翻译表的原文去查</td>
+  <td>翻译表本身就是<b>以原文为键</b>的字典，与地址无关。文本不重写就永远能命中；
+      同一句话出现多处时会<b>全部</b>命中并全部替换。</td>
+</tr>
+<tr>
+  <td>绝对指针引用</td>
+  <td>全映像顺序扫描 8 字节值，命中 <span class="mono">ImageBase + 目标RVA</span> 即记录</td>
+  <td>程序 <span class="mono">DYNAMIC_BASE</span> 未开启、无重定位表，映像<b>恒载于 0x140000000</b>，
+      绝对指针是字面量，扫描可靠。</td>
+</tr>
+<tr>
+  <td>RIP 相对 LEA</td>
+  <td>手工解码 <span class="mono">REX? 8D /modrm(mod=00,rm=101)/ disp32</span>，回算 <span class="mono">addr+size+disp</span> 是否等于目标 RVA</td>
+  <td>不依赖任何反汇编库；同一条指令会被 REX 前缀与 0x8D 各命中一次，
+      按<b>位移字节的文件偏移去重</b>，并在写入前回读校验。</td>
+</tr>
+<tr>
+  <td>5 处拓宽循环<br>（乱码根因）</td>
+  <td>搜索 <b>45 字节代码模板</b></td>
+  <td>实测 5 处<b>逐字节完全相同</b>，且尾部必须紧跟「写 0 结尾」指令，双重条件唯一确定。</td>
+</tr>
+<tr>
+  <td>UTF-8 转换函数</td>
+  <td>搜索 <b>33 字节模板</b>（含 <span class="mono">mov ecx, 0FDE9h</span> 即 CP_UTF8）；未命中则退化用锚点 + 邻近 <span class="mono">call qword [rip+x]</span> 推断</td>
+  <td>两级匹配，模板失效时仍有兜底；定位后还会断言它<b>没有被 LEA 补丁命中</b>。</td>
+</tr>
+<tr>
+  <td>新节 RVA</td>
+  <td>取最后一段节区的 <span class="mono">VA + align(VSIZE)</span> 再按节对齐上取整</td>
+  <td>不再写死 <span class="mono">0x60000</span>，节区数量或大小变化都能自适应。</td>
+</tr>
+</tbody>
+</table>
+
+<h3>1.2 关键一步：修掉「逐字节 1:1 拓宽」</h3>
+
+<p>程序内部有 5 处内联循环，把 ANSI 字节<b>直接当宽字符</b>写入列表控件 —— 这在纯 ASCII 下没问题，
+换成 UTF-8 中文必然乱码。生成器把这 5 处循环的开头改写成一次 <code>call</code>，跳到新节里的
+代码洞 <code>cave_strip_widen</code>（90 字节）：</p>
+
+<pre><span class="c">; 代码洞：入参 rcx=源(ANSI) rdx=目标(wchar)，返回时 rdx 指向译文末尾</span>
+push r8 / push r9 / sub rsp,0x38
+mov [rsp+0x20], rdx      <span class="c">; 保存目标指针</span>
+xchg rcx, rdx            <span class="c">; rcx=目标, rdx=源</span>
+call MultiByteToWideChar(CP_UTF8)   <span class="c">; ← 复用程序自己的转换包装</span>
+mov rdx,[rsp+0x20] / mov rcx,rdx
+WLOOP:  <span class="c">; 按助记符规则剥离 '&'：'&amp;&amp;'→'&amp;'，单 '&amp;' 丢弃</span>
+        …  <span class="c">; 其余字符原样照抄</span>
+WDONE:  add rsp,0x38 / pop r9 / pop r8 / ret</pre>
+
+<h3>1.3 实测产出（本次对原版重建）</h3>
+
+<table>
+<thead><tr><th>指标</th><th>旧构建器（硬编码地址）</th><th>本方案（内容签名）</th></tr></thead>
+<tbody>
+<tr><td>命中字符串集合</td><td>191 个</td><td><b>196 个</b>（旧集合的严格超集，旧集合独有 0 个）</td></tr>
+<tr><td>重定位 / 就地替换 / 跳过</td><td>191 / 1 / 1</td><td>194 / 1 / 1</td></tr>
+<tr><td>绝对指针补丁</td><td>145 处</td><td>149 处</td></tr>
+<tr><td>RIP-LEA 补丁</td><td>54 处</td><td>59 处（全部通过回读校验，0 失败）</td></tr>
+<tr><td>对话框资源文本</td><td>47 处</td><td>47 处（一致）</td></tr>
+<tr><td>代码模板定位</td><td>写死 5 处 + 0x48B0</td><td>现场搜到 5 处 + 0x48B0（完整模板）</td></tr>
+<tr><td>输出</td><td>383,144 字节</td><td>383,144 字节</td></tr>
+<tr><td>运行时自检</td><td>菜单中文 ✅</td><td>菜单中文 ✅ + 控件页列表显示「文件(F) | …」✅</td></tr>
+</tbody>
+</table>
+
+<h2>2. 需要替换的目标文件及其位置</h2>
+
+<table>
+<thead><tr><th style="width:120px">项目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>目标文件</td><td><code>C:\Program Files\voidImageViewer\voidImageViewer.exe</code></td></tr>
+<tr><td>操作</td><td><b>同名、同目录覆盖</b>。文件名必须保持 <span class="mono">voidImageViewer.exe</span></td></tr>
+<tr><td>安装目录现有文件</td><td>
+  <span class="mono">Uninstall.exe</span>（卸载器，<b>不要动</b>）<br>
+  <span class="mono">voidImageViewer.exe</span>（主程序，<b>被替换的就是它</b>）<br>
+  <span class="mono">voidImageViewer.ini</span>（配置指针文件，<b>不要动</b>）
+</td></tr>
+<tr><td>为什么不能改名</td><td>程序用自身路径定位配置与安装选项；<span class="mono">Uninstall.exe</span> 与开始菜单快捷方式也按该文件名引用。
+  改名会导致配置失效与卸载异常。</td></tr>
+</tbody>
+</table>
+
+<div class="card tip">
+<b>两种替换方式（任选其一）</b>
+<ol style="margin-bottom:0">
+  <li><b>一键（推荐）</b>：双击汉化包里的 <code>汉化.bat</code> —— 自动备份原版 → 生成 → 覆盖 → 启动自检。</li>
+  <li><b>纯手动</b>：先跑一次 <code>仅生成.bat</code> 得到
+      <code>cn_out\voidImageViewer.cn.exe</code>，再把它复制到安装目录并改名为
+      <code>voidImageViewer.exe</code> 覆盖（建议先自行备份原版）。</li>
+</ol>
+</div>
+
+<h2>3. 替换后生效的条件</h2>
+
+<p>本程序对自身文件<b>不做完整性校验</b>，这是方案成立的前提。实测已确认：</p>
+
+<ul>
+  <li>无自校验逻辑：改动后的 exe 可正常启动、菜单与对话框全部为中文；</li>
+  <li>PE 校验和已由生成器重算，<code>SizeOfImage</code> / 节区数 / 资源目录大小 / 证书目录偏移均已同步更新；</li>
+  <li>Windows 对本地文件替换<b>不做 Authenticode 强制校验</b>（仅对「来自网络的下载文件」附加 Mark-of-the-Web 时才有 SmartScreen 提示）。</li>
+</ul>
+
+<p>因此生效点为：<b>进程启动时加载 exe → 静态读取新节的译文与重建后的资源</b>。不需要重启系统、不需要改注册表、不需要任何运行时注入。</p>
+
+<div class="card">
+<b>三个前提条件（缺一不生效）</b>
+<ol style="margin-bottom:0">
+  <li><b>被替换的必须是原版</b>。若目标已含 <code>.cnstr</code> 节（说明已是汉化版），生成器会自动改用
+      <code>备份\</code> 里的原版重建；若备份也不存在，会明确报错要求先用安装包的原版覆盖。</li>
+  <li><b>覆盖时程序不能正在运行</b>，否则文件被占用，写入会失败。</li>
+  <li><b>写入 <code>C:\Program Files</code> 需要管理员权限</b>。报权限错误时右键
+      <code>汉化.bat</code> → 「以管理员身份运行」。</li>
+</ol>
+</div>
+
+<p><b>如何确认已生效：</b>生成器带 <code>--verify</code>，会启动程序、枚举主窗口、用
+<code>GetMenuStringW</code> 读回菜单文本，只要检测到中文字符即输出
+<span class="mono">自检结论：菜单已为中文 ✅</span>。手动核对可打开「关于」对话框或
+「选项 → 控件」页，后者能一并验证列表乱码修复。</p>
+
+<h2>4. 程序更新导致结构变化时的兼容性处理</h2>
+
+<h3>4.1 不同变化类型下的表现</h3>
+
+<table>
+<thead><tr><th style="width:190px">新版本的变化</th><th style="width:120px">本方案表现</th><th>说明 / 应对</th></tr></thead>
+<tbody>
+<tr><td>仅字符串增删改<br>（地址整体平移）</td><td><span class="tag ok">无感通过</span></td>
+  <td>内容签名定位天然免疫地址平移。这是版本升级最常见的形态。</td></tr>
+<tr><td>节区数量 / 大小变化</td><td><span class="tag ok">无感通过</span></td>
+  <td>新节 RVA 由最后一节自动推算，不再写死 0x60000。</td></tr>
+<tr><td>代码重排<br>（函数搬家）</td><td><span class="tag ok">无感通过</span></td>
+  <td>引用索引与代码模板都是现场扫描，不依赖函数地址。</td></tr>
+<tr><td>新增界面文本</td><td><span class="tag warn">需补词条</span></td>
+  <td>不会报错，但新英文会原样保留。生成器会打印未命中清单，
+      按原文补进 <code>translations.py</code> 即可，无需改其它代码。</td></tr>
+<tr><td>改动那 5 处循环 / 转换函数</td><td><span class="tag warn">降级</span></td>
+  <td>转换函数有「锚点推断」兜底；若连锚点都找不到，生成器<b>明确报错退出</b>，
+      不产出半成品，并提示检查 <code>SIG_MBTWC</code>。此时需人工核对后更新模板字节。</td></tr>
+<tr><td>取消清单里的 SxS 依赖<br>或换用完全不同的框架</td><td><span class="tag bad">需重做</span></td>
+  <td>属结构性重写，超出本包范围。</td></tr>
+</tbody>
+</table>
+
+<h3>4.2 三道自校验，保证「宁可报错，不产坏件」</h3>
+
+<ul>
+  <li><b>LEA 回读校验</b>：写入新位移前，先用旧位移回算 <code>addr + size + old_disp</code> 是否等于目标 RVA；
+      不等则跳过该处并打印告警（本次实测 0 失败）。</li>
+  <li><b>循环尾部校验</b>：45 字节模板之后必须紧跟写 0 结尾的指令，否则该处被剔除。</li>
+  <li><b>交叉污染校验</b>：断言 UTF-8 转换函数与循环区<b>没有被 LEA 补丁命中</b>，防止把钩子本身改坏。</li>
+</ul>
+
+<h3>4.3 升级后的标准动作（三步）</h3>
+
+<pre><span class="c">1)</span> 正常下载安装新版本 voidImageViewer（exe 被覆盖成新的英文版）
+<span class="c">2)</span> 双击汉化包目录里的  汉化.bat
+<span class="c">3)</span> 看到「自检结论：菜单已为中文 ✅」—— 完成。
+   <span class="c">（若打印了「未命中」清单，把新出现的英文按原文补进 translations.py 再跑一次即可）</span></pre>
+
+<div class="card tip">
+<b>幂等性已实测</b>：对已经是汉化版的 exe 再跑一次 <code>汉化.bat</code>，程序会自动识别
+<code>.cnstr</code> 节、改用 <code>备份\</code> 中的原版重建，不会「二次打补丁」导致文件损坏。
+<code>还原.bat</code> 也能把 exe 还原到与原始文件 <b>MD5 完全一致</b>（已实测：
+<span class="mono">2c30134266aabd607e186e5252f1452f</span>）。
+</div>
+
+<h2>5. 注意事项</h2>
+
+<table>
+<thead><tr><th style="width:132px">事项</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>数字签名失效</td>
+  <td>原版尾部 10,408 字节的 Authenticode 签名被<b>原样搬移</b>到新文件末尾，但文件内容已变，
+      <b>签名不再有效</b>。这不影响运行，只是「属性 → 数字签名」页会显示无效。</td></tr>
+<tr><td>杀软 / EDR 告警</td>
+  <td>改动后的 exe 无有效签名，且「新增可执行节 + 修改代码」是启发式引擎的敏感特征，可能被误报。
+      可加白名单，或改用「仅生成 + 手动替换」降低自动化痕迹。</td></tr>
+<tr><td>权限</td>
+  <td>写入 <code>C:\Program Files</code> 需管理员权限。生成器本身只读目标、写自己的输出目录时不需要提权；
+      仅在 <code>--deploy</code> 覆盖阶段需要。</td></tr>
+<tr><td>配置文件副作用</td>
+  <td>程序把快捷键等设置写入 <code>%APPDATA%\voidImageViewer\voidImageViewer.ini</code>，
+      <b>键名由命令名派生</b>。汉化后少数组会出现同名，但实测<b>快捷键取值完全一致、无设置丢失</b>。
+      建议在替换前备份该 ini。</td></tr>
+<tr><td>回滚</td>
+  <td>双击 <code>还原.bat</code> 即可从 <code>备份\</code> 还原。备份文件按时间戳命名，保留多次历史，
+      <b>切勿删除</b>该目录。</td></tr>
+<tr><td>不要汉化<br>Uninstall.exe</td>
+  <td>卸载器体积小、按钮文案有限，改动它收益极低，且会破坏卸载时的数字签名校验路径，
+      更重要的是<b>卸载时它会删除整个安装目录</b>，改动无意义。</td></tr>
+<tr><td>个别词条未落地</td>
+  <td>文件类型项 <span class="mono">*.* (All Files)</span>（原映像 RVA 0x44819）在原程序中
+      <b>没有任何引用</b>，且中文译文比原文长（19 &gt; 16 字节）无法就地替换，因此跳过。
+      生成器会明确打印这条「[跳过·无引用且超长]」，属预期行为。</td></tr>
+<tr><td>运行环境</td>
+  <td>重建器只用 Python 标准库（<b>无需 pip 安装任何包</b>），要求 Python 3.8+。
+      未装 Python 时，把 <code>python.exe</code> 放进包的 <code>runtime\</code> 子目录即可。</td></tr>
+</tbody>
+</table>
+
+<h2>6. 交付清单</h2>
+
+<table>
+<thead><tr><th style="width:230px">文件 / 目录</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td><code>汉化.bat</code></td><td>一键汉化：备份原版 → 生成 → 覆盖安装目录 → 启动自检</td></tr>
+<tr><td><code>仅生成.bat</code></td><td>只生成 <code>cn_out\voidImageViewer.cn.exe</code>，不动安装目录</td></tr>
+<tr><td><code>还原.bat</code></td><td>从 <code>备份\</code> 还原原始 exe</td></tr>
+<tr><td><code>rebuild_cn.py</code></td><td>版本自适应重建器（内容签名定位，纯标准库）</td></tr>
+<tr><td><code>translations.py</code></td><td>翻译表：223 条原文→译文 + 59 条保留项。<b>新增词条只需改这个文件</b></td></tr>
+<tr><td><code>pe_res_engine.py</code></td><td>PE 解析与 .rsrc 资源重建引擎</td></tr>
+<tr><td><code>cn_out\voidImageViewer.cn.exe</code></td><td>本次生成的汉化版（383,144 字节），可直接覆盖安装目录</td></tr>
+<tr><td><code>备份\</code></td><td>运行 <code>汉化.bat</code> 时自动创建，保存每次替换前的原版</td></tr>
+<tr><td><code>使用说明.txt</code></td><td>面向使用者的简短操作指引</td></tr>
+</tbody>
+</table>
+
+<hr>
+<p class="sub">本方案的全部结论均来自对本机原版二进制的实测：注册表 KnownDLLs 名单比对、PE 导入表与数据目录解析、
+内嵌清单提取、DLL 劫持对照实验、以及两次完整构建 + 运行时菜单/控件回读。生成器跑一次约 1 秒。</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1803 @@
+{
+ "rows": [
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&File",
+   "zh": "文件(&F)",
+   "note": "RVA 0x43a70"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Open Everything &Search...",
+   "zh": "打开 Everything 搜索(&S)...",
+   "note": "RVA 0x43a30"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Add File...",
+   "zh": "添加文件(&A)...",
+   "note": "RVA 0x43a20"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Add Folder...",
+   "zh": "添加文件夹...",
+   "note": "RVA 0x43a10"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Add Everything Search...",
+   "zh": "添加 Everything 搜索...",
+   "note": "RVA 0x439f0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Close",
+   "zh": "关闭(&C)",
+   "note": "RVA 0x43988"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Delete (Recycle)",
+   "zh": "删除（移入回收站）",
+   "note": "RVA 0x43968"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Delete (Permanently)",
+   "zh": "删除（永久删除）",
+   "note": "RVA 0x43950"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Edit",
+   "zh": "编辑(&E)",
+   "note": "RVA 0x43928"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Copy Filename",
+   "zh": "复制文件名",
+   "note": "RVA 0x43908"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Paste",
+   "zh": "粘贴(&P)",
+   "note": "RVA 0x438ec"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&View",
+   "zh": "视图(&V)",
+   "note": "RVA 0x43880"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Caption",
+   "zh": "标题栏",
+   "note": "RVA 0x43878"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Frame",
+   "zh": "边框",
+   "note": "RVA 0x4386c"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Preset",
+   "zh": "预设(&P)",
+   "note": "RVA 0x43840"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Window Size",
+   "zh": "窗口大小(&W)",
+   "note": "RVA 0x437e8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Best Fit",
+   "zh": "最佳适应(&B)",
+   "note": "RVA 0x43768"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Pa&n && Scan",
+   "zh": "平移与扫描(&N)",
+   "note": "RVA 0x43758"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Zoom",
+   "zh": "缩放(&Z)",
+   "note": "RVA 0x436dc"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Move Up Left",
+   "zh": "左上移",
+   "note": "RVA 0x43668"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Move Up Right",
+   "zh": "右上移",
+   "note": "RVA 0x43658"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Move Down Left",
+   "zh": "左下移",
+   "note": "RVA 0x43648"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Move Down Right",
+   "zh": "右下移",
+   "note": "RVA 0x43638"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "On &Top",
+   "zh": "窗口置顶(&T)",
+   "note": "RVA 0x43618"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Rate",
+   "zh": "速率(&R)",
+   "note": "RVA 0x435b8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Animation",
+   "zh": "动画(&A)",
+   "note": "RVA 0x43458"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Short Jump &Forward",
+   "zh": "短距离快进(&F)",
+   "note": "RVA 0x43420"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Short Jump &Backward",
+   "zh": "短距离快退(&B)",
+   "note": "RVA 0x43408"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Long Jump &Forward",
+   "zh": "长距离快进(&F)",
+   "note": "RVA 0x433f0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "Long Jump &Backward",
+   "zh": "长距离快退(&B)",
+   "note": "RVA 0x433d8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "&Navigate",
+   "zh": "导航(&N)",
+   "note": "RVA 0x43378"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏（按条件显示的菜单项）",
+   "en": "S&ort",
+   "zh": "排序(&O)",
+   "note": "RVA 0x43348"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)...",
+   "en": "&Open File...",
+   "zh": "打开文件(&O)...",
+   "note": "RVA 0x43a60"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1",
+   "en": "1:1",
+   "zh": "1:1",
+   "note": ""
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 上移(&U)",
+   "en": "Move &Up",
+   "zh": "上移(&U)",
+   "note": "RVA 0x436a8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 下移(&D)",
+   "en": "Move &Down",
+   "zh": "下移(&D)",
+   "note": "RVA 0x43698"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 从不(&N)",
+   "en": "&Never",
+   "zh": "从不(&N)",
+   "note": "RVA 0x435dc"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 减小宽度(&E)",
+   "en": "D&ecrease Width",
+   "zh": "减小宽度(&E)",
+   "note": "RVA 0x43718"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 减小尺寸(&D)",
+   "en": "&Decrease Size",
+   "zh": "减小尺寸(&D)",
+   "note": "RVA 0x43738"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 减小高度(&G)",
+   "en": "De&cre&ase Height",
+   "zh": "减小高度(&G)",
+   "note": "RVA 0x436e8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 右移(&R)",
+   "en": "Move &Right",
+   "zh": "右移(&R)",
+   "note": "RVA 0x43678"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 增大宽度(&N)",
+   "en": "I&ncrease Width",
+   "zh": "增大宽度(&N)",
+   "note": "RVA 0x43728"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 增大尺寸(&I)",
+   "en": "&Increase Size",
+   "zh": "增大尺寸(&I)",
+   "note": "RVA 0x43748"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 增大高度(&C)",
+   "en": "In&crease Height",
+   "zh": "增大高度(&C)",
+   "note": "RVA 0x43700"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 居中(&T)",
+   "en": "Move Cen&ter",
+   "zh": "居中(&T)",
+   "note": "RVA 0x43628"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 左移(&L)",
+   "en": "Move &Left",
+   "zh": "左移(&L)",
+   "note": "RVA 0x43688"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 总是(&A)",
+   "en": "&Always",
+   "zh": "总是(&A)",
+   "note": "RVA 0x43610"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 播放幻灯片或动画时(&W)",
+   "en": "&While Playing Slideshow or Animating",
+   "zh": "播放幻灯片或动画时(&W)",
+   "note": "RVA 0x435e8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 放大(&I)",
+   "en": "Zoom &In",
+   "zh": "放大(&I)",
+   "note": "RVA 0x436d0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 缩小(&O)",
+   "en": "Zoom &Out",
+   "zh": "缩小(&O)",
+   "note": "RVA 0x436c0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 重置(&R)",
+   "en": "&Reset",
+   "zh": "重置(&R)",
+   "note": "RVA 0x436b4"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 1:1 > 重置(&S)",
+   "en": "Re&set",
+   "zh": "重置(&S)",
+   "note": "RVA 0x43620"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 上一个(&R)",
+   "en": "P&revious",
+   "zh": "上一个(&R)",
+   "note": "RVA 0x43360"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 上一帧(&V)",
+   "en": "Pre&vious Frame",
+   "zh": "上一帧(&V)",
+   "note": "RVA 0x433b8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 下一个(&N)",
+   "en": "&Next",
+   "zh": "下一个(&N)",
+   "note": "RVA 0x4336c"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 主页(&P)",
+   "en": "Home &Page",
+   "zh": "主页(&P)",
+   "note": "RVA 0x43290"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 保持宽高比(&K)",
+   "en": "&Keep Aspect Ratio",
+   "zh": "保持宽高比(&K)",
+   "note": "RVA 0x43788"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 允许缩小(&A)",
+   "en": "&Allow Shrinking",
+   "zh": "允许缩小(&A)",
+   "note": "RVA 0x437a0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 全屏(&U)",
+   "en": "F&ullscreen",
+   "zh": "全屏(&U)",
+   "note": "RVA 0x43808"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 关于(&A)",
+   "en": "&About",
+   "zh": "关于(&A)",
+   "note": "RVA 0x43280"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 删除(&D)",
+   "en": "&Delete",
+   "zh": "删除(&D)",
+   "note": "RVA 0x43980"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 刷新(&R)",
+   "en": "&Refresh",
+   "zh": "刷新(&R)",
+   "note": "RVA 0x437b8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 剪切(&T)",
+   "en": "Cu&t",
+   "zh": "剪切(&T)",
+   "note": "RVA 0x43920"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 单帧步进(&R)",
+   "en": "F&rame Step",
+   "zh": "单帧步进(&R)",
+   "note": "RVA 0x433c8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 命令行选项(&C)",
+   "en": "&Command Line Options",
+   "zh": "命令行选项(&C)",
+   "note": "RVA 0x432a0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 填满窗口(&F)",
+   "en": "&Fill Window",
+   "zh": "填满窗口(&F)",
+   "note": "RVA 0x43778"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 复制(&C)",
+   "en": "&Copy",
+   "zh": "复制(&C)",
+   "note": "RVA 0x43918"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 复制到文件夹(&F)...",
+   "en": "Copy to &Folder...",
+   "zh": "复制到文件夹(&F)...",
+   "note": "RVA 0x438a0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 复制图像(&Y)",
+   "en": "Cop&y Image",
+   "zh": "复制图像(&Y)",
+   "note": "RVA 0x438f8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 属性(&R)",
+   "en": "P&roperties",
+   "zh": "属性(&R)",
+   "note": "RVA 0x43938"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 帮助(&H)",
+   "en": "&Help",
+   "zh": "帮助(&H)",
+   "note": "RVA 0x432b8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 幻灯片(&S)",
+   "en": "&Slideshow",
+   "zh": "幻灯片(&S)",
+   "note": "RVA 0x437f8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 幻灯片(&S) > 100%",
+   "en": "100%",
+   "zh": "100%",
+   "note": ""
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 幻灯片(&S) > 200%",
+   "en": "200%",
+   "zh": "200%",
+   "note": ""
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 幻灯片(&S) > 50%",
+   "en": "50%",
+   "zh": "50%",
+   "note": ""
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 幻灯片(&S) > 自动适应(&A)",
+   "en": "&Auto Fit",
+   "zh": "自动适应(&A)",
+   "note": "RVA 0x437c8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 快进(&F)",
+   "en": "Jump &Forward",
+   "zh": "快进(&F)",
+   "note": "RVA 0x43448"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 快退(&B)",
+   "en": "Jump &Backward",
+   "zh": "快退(&B)",
+   "note": "RVA 0x43438"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 打印(&P)...",
+   "en": "&Print...",
+   "zh": "打印(&P)...",
+   "note": "RVA 0x439a8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 打开文件位置(&I)...",
+   "en": "Open F&ile Location...",
+   "zh": "打开文件位置(&I)...",
+   "note": "RVA 0x439d8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 打开文件夹(&F)...",
+   "en": "Open &Folder...",
+   "zh": "打开文件夹(&F)...",
+   "note": "RVA 0x43a50"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 捐赠(&D)",
+   "en": "&Donate",
+   "zh": "捐赠(&D)",
+   "note": "RVA 0x43288"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 控件(&C)",
+   "en": "&Controls",
+   "zh": "控件(&C)",
+   "note": "RVA 0x43848"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 控件(&C) > 极简(&M)",
+   "en": "&Minimal",
+   "zh": "极简(&M)",
+   "note": "RVA 0x43830"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 控件(&C) > 标准(&N)",
+   "en": "&Normal",
+   "zh": "标准(&N)",
+   "note": "RVA 0x43818"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 控件(&C) > 紧凑(&C)",
+   "en": "&Compact",
+   "zh": "紧凑(&C)",
+   "note": "RVA 0x43820"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 提高速率(&I)",
+   "en": "&Increase Rate",
+   "zh": "提高速率(&I)",
+   "note": "RVA 0x43598"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P)",
+   "en": "&Play/Pause",
+   "zh": "播放/暂停(&P)",
+   "note": "RVA 0x435c0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 1 分钟",
+   "en": "1 Minute",
+   "zh": "1 分钟",
+   "note": "RVA 0x43478"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 1 秒(&1)",
+   "en": "&1 Second",
+   "zh": "1 秒(&1)",
+   "note": "RVA 0x43558"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 10 秒(&0)",
+   "en": "1&0 Seconds",
+   "zh": "10 秒(&0)",
+   "note": "RVA 0x434c8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 2 秒(&2)",
+   "en": "&2 Seconds",
+   "zh": "2 秒(&2)",
+   "note": "RVA 0x43548"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 20 秒",
+   "en": "20 Seconds",
+   "zh": "20 秒",
+   "note": "RVA 0x434b8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 250 毫秒",
+   "en": "250 Milliseconds",
+   "zh": "250 毫秒",
+   "note": "RVA 0x43580"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 3 秒(&3)",
+   "en": "&3 Seconds",
+   "zh": "3 秒(&3)",
+   "note": "RVA 0x43538"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 30 秒",
+   "en": "30 Seconds",
+   "zh": "30 秒",
+   "note": "RVA 0x434a8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 4 秒(&4)",
+   "en": "&4 Seconds",
+   "zh": "4 秒(&4)",
+   "note": "RVA 0x43528"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 40 秒",
+   "en": "40 Seconds",
+   "zh": "40 秒",
+   "note": "RVA 0x43498"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 5 秒(&5)",
+   "en": "&5 Seconds",
+   "zh": "5 秒(&5)",
+   "note": "RVA 0x43518"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 50 秒",
+   "en": "50 Seconds",
+   "zh": "50 秒",
+   "note": "RVA 0x43488"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 500 毫秒",
+   "en": "500 Milliseconds",
+   "zh": "500 毫秒",
+   "note": "RVA 0x43568"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 6 秒(&6)",
+   "en": "&6 Seconds",
+   "zh": "6 秒(&6)",
+   "note": "RVA 0x43508"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 7 秒(&7)",
+   "en": "&7 Seconds",
+   "zh": "7 秒(&7)",
+   "note": "RVA 0x434f8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 8 秒(&8)",
+   "en": "&8 Seconds",
+   "zh": "8 秒(&8)",
+   "note": "RVA 0x434e8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 9 秒(&9)",
+   "en": "&9 Seconds",
+   "zh": "9 秒(&9)",
+   "note": "RVA 0x434d8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 播放/暂停(&P) > 自定义...",
+   "en": "Custom...",
+   "zh": "自定义...",
+   "note": "RVA 0x43468"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E)",
+   "en": "&End",
+   "zh": "最后一个(&E)",
+   "note": "RVA 0x43350"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E) > 修改日期(&M)",
+   "en": "Date &Modified",
+   "zh": "修改日期(&M)",
+   "note": "RVA 0x43310"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E) > 创建日期(&C)",
+   "en": "Date &Created",
+   "zh": "创建日期(&C)",
+   "note": "RVA 0x43300"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E) > 升序(&A)",
+   "en": "&Ascending",
+   "zh": "升序(&A)",
+   "note": "RVA 0x432f0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E) > 名称(&N)",
+   "en": "&Name",
+   "zh": "名称(&N)",
+   "note": "RVA 0x43340"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E) > 大小(&S)",
+   "en": "&Size",
+   "zh": "大小(&S)",
+   "note": "RVA 0x43320"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E) > 完整路径和文件名(&P)",
+   "en": "Full &Path and Filename",
+   "zh": "完整路径和文件名(&P)",
+   "note": "RVA 0x43328"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一个(&E) > 降序(&D)",
+   "en": "&Descending",
+   "zh": "降序(&D)",
+   "note": "RVA 0x432e0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 最后一帧(&L)",
+   "en": "&Last Frame",
+   "zh": "最后一帧(&L)",
+   "note": "RVA 0x43398"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 状态栏(&B)",
+   "en": "Status &Bar",
+   "zh": "状态栏(&B)",
+   "note": "RVA 0x43858"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 移动到文件夹(&V)...",
+   "en": "Mo&ve to Folder...",
+   "zh": "移动到文件夹(&V)...",
+   "note": "RVA 0x43888"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 第一个(&H)",
+   "en": "&Home",
+   "zh": "第一个(&H)",
+   "note": "RVA 0x43358"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 第一帧(&I)",
+   "en": "F&irst Frame",
+   "zh": "第一帧(&I)",
+   "note": "RVA 0x433a8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 编辑(&E)...",
+   "en": "&Edit...",
+   "zh": "编辑(&E)...",
+   "note": "RVA 0x439c8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 菜单(&M)",
+   "en": "&Menu",
+   "zh": "菜单(&M)",
+   "note": "RVA 0x43864"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 设为桌面壁纸(&D)",
+   "en": "Set &Desktop Wallpaper",
+   "zh": "设为桌面壁纸(&D)",
+   "note": "RVA 0x43990"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 跳转到(&J)...",
+   "en": "&Jump To...",
+   "zh": "跳转到(&J)...",
+   "note": "RVA 0x432c0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 退出(&X)",
+   "en": "E&xit",
+   "zh": "退出(&X)",
+   "note": "RVA 0x43930"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 逆时针旋转(&N)",
+   "en": "Rotate Cou&nterclockwise",
+   "zh": "逆时针旋转(&N)",
+   "note": "RVA 0x438b8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 选项(&O)...",
+   "en": "&Options...",
+   "zh": "选项(&O)...",
+   "note": "RVA 0x435d0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 重命名(&M)",
+   "en": "&Rename",
+   "zh": "重命名(&M)",
+   "note": "RVA 0x43948"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 重置速率(&E)",
+   "en": "R&eset Rate",
+   "zh": "重置速率(&E)",
+   "note": "RVA 0x43388"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 降低速率(&D)",
+   "en": "&Decrease Rate",
+   "zh": "降低速率(&D)",
+   "note": "RVA 0x435a8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 随机播放(&S)",
+   "en": "&Shuffle",
+   "zh": "随机播放(&S)",
+   "note": "RVA 0x432d0"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 顺时针旋转(&K)",
+   "en": "Rotate &Cloc&kwise",
+   "zh": "顺时针旋转(&K)",
+   "note": "RVA 0x438d8"
+  },
+  {
+   "cat": "主菜单 / 菜单项",
+   "loc": "菜单栏：打开文件(&O)... > 预览(&V)...",
+   "en": "Pre&view...",
+   "zh": "预览(&V)...",
+   "note": "RVA 0x439b8"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 右键单击操作(&R):",
+   "en": "Context Menu",
+   "zh": "上下文菜单",
+   "note": "RVA 0x44710"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 右键单击操作(&R):",
+   "en": "Zoom Out",
+   "zh": "缩小",
+   "note": "RVA 0x44700"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 右键单击操作(&R):",
+   "en": "Previous Image",
+   "zh": "上一张图像",
+   "note": "RVA 0x446f0 / 0x44648"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 左键单击操作(&L):",
+   "en": "Scroll",
+   "zh": "滚动",
+   "note": "RVA 0x44788"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 左键单击操作(&L):",
+   "en": "Play/Pause Slideshow",
+   "zh": "播放/暂停幻灯片",
+   "note": "RVA 0x44770"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 左键单击操作(&L):",
+   "en": "Play/Pause Animation",
+   "zh": "播放/暂停动画",
+   "note": "RVA 0x44758"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 左键单击操作(&L):",
+   "en": "Zoom In",
+   "zh": "放大",
+   "note": "RVA 0x44750"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 左键单击操作(&L):",
+   "en": "Next Image",
+   "zh": "下一张图像",
+   "note": "RVA 0x44740 / 0x44630"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 左键单击操作(&L):",
+   "en": "1:1 Scroll",
+   "zh": "1:1 滚动",
+   "note": "RVA 0x44730"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 左键单击操作(&L):",
+   "en": "Move Window",
+   "zh": "移动窗口",
+   "note": "RVA 0x44720"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 放大时位块传输模式(&M):",
+   "en": "Auto Fit",
+   "zh": "自动适应",
+   "note": "RVA 0x441d0"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 缩小时位块传输模式(&S):",
+   "en": "COLORONCOLOR (Performance)",
+   "zh": "COLORONCOLOR（高性能）",
+   "note": "RVA 0x441f8"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 缩小时位块传输模式(&S):",
+   "en": "HALFTONE (Quality)",
+   "zh": "HALFTONE（高质量）",
+   "note": "RVA 0x441e0"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 鼠标滚轮操作(&M):",
+   "en": "Zoom",
+   "zh": "缩放",
+   "note": "RVA 0x446e4"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 鼠标滚轮操作(&M):",
+   "en": "Next/Prev",
+   "zh": "下一个/上一个",
+   "note": "RVA 0x446d8"
+  },
+  {
+   "cat": "选项对话框 · 下拉列表与列表项",
+   "loc": "选项对话框 → 鼠标滚轮操作(&M):",
+   "en": "Prev/Next",
+   "zh": "上一个/下一个",
+   "note": "RVA 0x446c8"
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "General",
+   "zh": "常规",
+   "note": "RVA 0x43a90"
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "View",
+   "zh": "视图",
+   "note": "RVA 0x43a84"
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "Controls",
+   "zh": "控件",
+   "note": "RVA 0x43a78"
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "Add Keyboard Shortcut",
+   "zh": "添加键盘快捷键",
+   "note": "RVA 0x44698"
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "Load Everything Search",
+   "zh": "载入 Everything 搜索",
+   "note": "RVA 0x44470"
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "Add Everything Search",
+   "zh": "添加 Everything 搜索",
+   "note": "RVA 0x44488"
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "Slideshow Rate",
+   "zh": "幻灯片速率",
+   "note": ""
+  },
+  {
+   "cat": "选项对话框 · 设置项",
+   "loc": "选项对话框",
+   "en": "Slideshow Play/Pause",
+   "zh": "幻灯片 播放/暂停",
+   "note": "RVA 0x44968"
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "关于对话框（DIALOG 121 标题）",
+   "en": "About void Image Viewer",
+   "zh": "关于 void Image Viewer",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "搜索 Everything 对话框（DIALOG 129 控件 ID 1021）",
+   "en": "Randomize",
+   "zh": "随机化",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "搜索 Everything 对话框（DIALOG 129 标题）",
+   "en": "Search Everything",
+   "zh": "搜索 Everything",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "编辑键盘快捷键对话框（DIALOG 123 控件 ID 4294967295）",
+   "en": "Shortcut &key:",
+   "zh": "快捷键(&K):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "编辑键盘快捷键对话框（DIALOG 123 控件 ID 4294967295）",
+   "en": "Shortcut key currently used by:",
+   "zh": "当前使用该快捷键的命令:",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "编辑键盘快捷键对话框（DIALOG 123 标题）",
+   "en": "Edit Keyboard Shortcut",
+   "zh": "编辑键盘快捷键",
+   "note": "RVA 0x446b0"
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "设置自定义速率对话框（DIALOG 109 控件 ID 4294967295）",
+   "en": "&Custom rate:",
+   "zh": "自定义速率(&C):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "设置自定义速率对话框（DIALOG 109 标题）",
+   "en": "Set Custom Rate",
+   "zh": "设置自定义速率",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "跳转到对话框（DIALOG 128 标题）",
+   "en": "Jump To",
+   "zh": "跳转到",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 常规页（DIALOG 101 控件 ID 1014）",
+   "en": "Check &All",
+   "zh": "全选(&A)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 常规页（DIALOG 101 控件 ID 1019）",
+   "en": "Allow multiple &instances",
+   "zh": "允许多个实例(&I)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 常规页（DIALOG 101 控件 ID 1020）",
+   "en": "Start &menu shortcuts",
+   "zh": "创建开始菜单快捷方式(&M)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 常规页（DIALOG 101 控件 ID 1021）",
+   "en": "&Store settings in %APPDATA%\\voidImageViewer",
+   "zh": "将设置保存到 %APPDATA%\\voidImageViewer(&S)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 常规页（DIALOG 101 控件 ID 1024）",
+   "en": "Check &None",
+   "zh": "全不选(&N)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 常规页（DIALOG 101 控件 ID 4294967295）",
+   "en": "Associations",
+   "zh": "文件关联",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 控件页（DIALOG 110 控件 ID 1023）",
+   "en": "&Add...",
+   "zh": "添加(&A)...",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 控件页（DIALOG 110 控件 ID 1033）",
+   "en": "Remo&ve",
+   "zh": "移除(&V)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 控件页（DIALOG 110 控件 ID 4294967295）",
+   "en": "&Left click action:",
+   "zh": "左键单击操作(&L):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 控件页（DIALOG 110 控件 ID 4294967295）",
+   "en": "&Right click action:",
+   "zh": "右键单击操作(&R):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 控件页（DIALOG 110 控件 ID 4294967295）",
+   "en": "&Mouse wheel action:",
+   "zh": "鼠标滚轮操作(&M):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 控件页（DIALOG 110 控件 ID 4294967295）",
+   "en": "&Commands:",
+   "zh": "命令(&C):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 控件页（DIALOG 110 控件 ID 4294967295）",
+   "en": "Settings for selected command",
+   "zh": "所选命令的设置",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 1028）",
+   "en": "&Play animations at least once in slideshow",
+   "zh": "幻灯片中动画至少播放一次(&P)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 1048）",
+   "en": "Preload &next image",
+   "zh": "预加载下一张图像(&N)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 1049）",
+   "en": "Cache &last image",
+   "zh": "缓存上一张图像(&L)",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 1050）",
+   "en": "Auto si&ze window:",
+   "zh": "自动调整窗口大小(&Z):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 4294967295）",
+   "en": "&Shrink blit mode:",
+   "zh": "缩小时位块传输模式(&S):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 4294967295）",
+   "en": "&Magnify blit mode:",
+   "zh": "放大时位块传输模式(&M):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 4294967295）",
+   "en": "&Windowed background color:",
+   "zh": "窗口模式背景色(&W):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项 · 视图页（DIALOG 107 控件 ID 4294967295）",
+   "en": "&Fullscreen background color:",
+   "zh": "全屏背景色(&F):",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项对话框（DIALOG 106 控件 ID 1）",
+   "en": "OK",
+   "zh": "确定",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项对话框（DIALOG 106 控件 ID 2）",
+   "en": "Cancel",
+   "zh": "取消",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "选项对话框（DIALOG 106 标题）",
+   "en": "Options - Void Image Viewer",
+   "zh": "选项 - Void Image Viewer",
+   "note": ""
+  },
+  {
+   "cat": "对话框资源（DIALOG）",
+   "loc": "重命名对话框（DIALOG 127 标题）",
+   "en": "Rename",
+   "zh": "重命名",
+   "note": ""
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Loading...",
+   "zh": "正在加载...",
+   "note": "RVA 0x44338 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Failed to load image.",
+   "zh": "无法加载图像。",
+   "note": "RVA 0x442e8 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "File not found.",
+   "zh": "找不到文件。",
+   "note": "RVA 0x44318 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Slideshow playing",
+   "zh": "正在播放幻灯片",
+   "note": "RVA 0x442c0 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "PRELOAD",
+   "zh": "预加载",
+   "note": "RVA 0x44370 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "milliseconds",
+   "zh": "毫秒",
+   "note": "RVA 0x43b78 / 0x44410"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "seconds",
+   "zh": "秒",
+   "note": "RVA 0x43b70 / 0x44430"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "minutes",
+   "zh": "分钟",
+   "note": "RVA 0x43b68 / 0x44440"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "hours",
+   "zh": "小时",
+   "note": "RVA 0x44450 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Actual Size",
+   "zh": "实际大小",
+   "note": "RVA 0x445c0 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Best Fit",
+   "zh": "最佳适应",
+   "note": "RVA 0x445d8 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Pause Slideshow",
+   "zh": "暂停幻灯片",
+   "note": "RVA 0x445f0 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Play Slideshow",
+   "zh": "播放幻灯片",
+   "note": "RVA 0x44610 (UTF-16)"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "POS: %d,%d RGB: %d,%d,%d",
+   "zh": "坐标: %d,%d RGB: %d,%d,%d",
+   "note": "RVA 0x44350"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": " KB)",
+   "zh": " KB）",
+   "note": "RVA 0x44388"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Animation rate %0.3f",
+   "zh": "动画速率 %0.3f",
+   "note": "RVA 0x443e0"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Slideshow rate %d %S",
+   "zh": "幻灯片速率 %d %S",
+   "note": "RVA 0x443f8"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Error %d: unable to copy %S to %S",
+   "zh": "错误 %d：无法将 %S 复制到 %S",
+   "note": "RVA 0x44138"
+  },
+  {
+   "cat": "状态栏 / 工具栏提示 / 错误信息",
+   "loc": "状态栏 / 工具栏 / 消息提示（程序内字符串常量）",
+   "en": "Everything not available",
+   "zh": "Everything 不可用",
+   "note": "RVA 0x44160"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "Open Image",
+   "zh": "打开图像",
+   "note": "RVA 0x447b8"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "All Image Files",
+   "zh": "所有图像文件",
+   "note": "RVA 0x447d0"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "*.* (All Files)",
+   "zh": "*.* (所有文件)",
+   "note": "RVA 0x447a0 / 0x44819"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "WebP Image",
+   "zh": "WebP 图像",
+   "note": "RVA 0x431d8"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "TIFF Image",
+   "zh": "TIFF 图像",
+   "note": "RVA 0x431e8"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "PNG Image",
+   "zh": "PNG 图像",
+   "note": "RVA 0x431f8"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "JPEG Image",
+   "zh": "JPEG 图像",
+   "note": "RVA 0x43208"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "Icon File",
+   "zh": "图标文件",
+   "note": "RVA 0x43218"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "Animated GIF Image",
+   "zh": "动态 GIF 图像",
+   "note": "RVA 0x43228"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "Bitmap Image",
+   "zh": "位图图像",
+   "note": "RVA 0x43240"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "Move To",
+   "zh": "移动到",
+   "note": "RVA 0x44790"
+  },
+  {
+   "cat": "文件对话框 / 文件类型",
+   "loc": "打开 / 移动 / 复制 文件对话框",
+   "en": "Copy To",
+   "zh": "复制到",
+   "note": "RVA 0x44798"
+  },
+  {
+   "cat": "关于 · 命令行选项（帮助正文）",
+   "loc": "帮助 > 命令行选项 对话框正文",
+   "en": "Usage:\nvoidImageViewer.exe [/switches] [filename(s)]\n\nSwitches:\n/slideshow\tStart a slideshow.\n/fullscreen\tStart fullscreen.\n/maximized\tStart maximized.\n/window\t\tStart windowed.\n/ontop\t\tShow on top of other windows.\n/minimal\t\tBorderless window.\n/compact\t\tBordered window.\n/x <x> /y <y> /width <width> /height <height>\n\t\tSet the Window position and size.\n/rate <rate>\tSet the slideshow rate in milliseconds.\n/name\t\tSort by name.\n/path\t\tSort by full path and filename.\n/size\t\tSort by size.\n/dm\t\tSort by date modified.\n/dc\t\tSort by date created.\n/ascending\tSort in ascending order.\n/descending\tSort in descending order.\n/everything <search> Open files from an Everything search.\n/random <search>\tOpen random files from an Everything search.\n/shuffle\t\tShuffle playlist.\n/<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\tInstall association.\n/no<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\tUninstall association.\n/appdata\t\tSave settings in appdata.\n/noappdata\tSave settings in exe path.\n/startmenu\tAdd Start menu shortcuts.\n/nostartmenu\tRemove Start menu shortcuts.\n/install <path>\tInstall to the specified path.\n/install-options <...> Run with the specified options after installation.\n/uninstall <path>\tUninstall from the specified path.\n",
+   "zh": "用法:\nvoidImageViewer.exe [/开关] [文件名...]\n\n开关:\n/slideshow\t启动幻灯片播放。\n/fullscreen\t启动全屏。\n/maximized\t最大化启动。\n/window\t\t以窗口方式启动。\n/ontop\t\t窗口置顶显示。\n/minimal\t\t无边框窗口。\n/compact\t\t带边框窗口。\n/x <x> /y <y> /width <宽度> /height <高度>\n\t\t设置窗口位置与尺寸。\n/rate <速率>\t设置幻灯片速率（毫秒）。\n/name\t\t按名称排序。\n/path\t\t按完整路径和文件名排序。\n/size\t\t按大小排序。\n/dm\t\t按修改日期排序。\n/dc\t\t按创建日期排序。\n/ascending\t按升序排列。\n/descending\t按降序排列。\n/everything <搜索>\t打开 Everything 搜索得到的文件。\n/random <搜索>\t从 Everything 搜索结果中随机打开文件。\n/shuffle\t\t随机播放列表。\n/<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\t安装文件关联。\n/no<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\t卸载文件关联。\n/appdata\t\t将设置保存在 appdata 中。\n/noappdata\t将设置保存在 exe 所在路径。\n/startmenu\t添加开始菜单快捷方式。\n/nostartmenu\t删除开始菜单快捷方式。\n/install <路径>\t安装到指定路径。\n/install-options <...> 安装后以指定选项运行。\n/uninstall <路径>\t从指定路径卸载。\n",
+   "note": "RVA 0x43c10"
+  },
+  {
+   "cat": "内部调试信息（仅开发可见）",
+   "loc": "状态栏调试输出（需启用调试项）",
+   "en": ":Pos %0.3f %0.3f, Zoom %0.3f %0.3f, Aspect Ratio %0.3f",
+   "zh": ":坐标 %0.3f %0.3f, 缩放 %0.3f %0.3f, 比例 %0.3f",
+   "note": "RVA 0x443a7"
+  }
+ ],
+ "keeps": [
+  {
+   "en": "void Image Viewer",
+   "reason": "产品名（品牌）"
+  },
+  {
+   "en": "voidImageViewer",
+   "reason": "产品/配置节名"
+  },
+  {
+   "en": "VOIDIMAGEVIEWER",
+   "reason": "窗口类名"
+  },
+  {
+   "en": "unicows.dll",
+   "reason": "依赖库文件名"
+  },
+  {
+   "en": "stobject.dll",
+   "reason": "系统库名"
+  },
+  {
+   "en": " Uninstall.exe",
+   "reason": "安装程序文件名"
+  },
+  {
+   "en": "Uninstall.exe",
+   "reason": "安装程序文件名"
+  },
+  {
+   "en": "Uninstall.lnk",
+   "reason": "快捷方式文件名"
+  },
+  {
+   "en": "void Image Viewer.lnk",
+   "reason": "快捷方式文件名"
+  },
+  {
+   "en": "voidImageViewer.exe",
+   "reason": "主程序文件名"
+  },
+  {
+   "en": "www.voidtools.com",
+   "reason": "官网地址"
+  },
+  {
+   "en": "david.carpenter@voidtools.com",
+   "reason": "作者邮箱"
+  },
+  {
+   "en": "Copyright © 2025 David Carpenter",
+   "reason": "版权声明"
+  },
+  {
+   "en": "(x64)",
+   "reason": "架构标识"
+  },
+  {
+   "en": "%d.%d.%d.%d%s %s",
+   "reason": "版本号格式串"
+  },
+  {
+   "en": "Shift",
+   "reason": "键名"
+  },
+  {
+   "en": "Alt",
+   "reason": "键名"
+  },
+  {
+   "en": "Ctrl",
+   "reason": "键名"
+  },
+  {
+   "en": " Preferred DropEffect",
+   "reason": "剪贴板格式名"
+  },
+  {
+   "en": "Everything",
+   "reason": "第三方产品名"
+  },
+  {
+   "en": "msctls_statusbar32",
+   "reason": "系统控件类名"
+  },
+  {
+   "en": "ToolbarWindow32",
+   "reason": "系统控件类名"
+  },
+  {
+   "en": "_VIV_REBAR",
+   "reason": "内部窗口类名"
+  },
+  {
+   "en": "_VIV_FULLSCREEN",
+   "reason": "内部窗口类名"
+  },
+  {
+   "en": "EVERYTHING_TASKBAR_NOTIFICATION",
+   "reason": "内部通知消息名"
+  },
+  {
+   "en": "ext:bmp;gif;ico;jpeg;jpg;png;tif;tiff;webp <",
+   "reason": "Everything 搜索语法"
+  },
+  {
+   "en": "*.bmp;*.gif;*.ico;*.jpeg;*.jpg;*.png;*.tif;*.tiff;*.webp",
+   "reason": "通配符过滤器"
+  },
+  {
+   "en": "*.*",
+   "reason": "通配符"
+  },
+  {
+   "en": "..",
+   "reason": "路径片段"
+  },
+  {
+   "en": "\\*.*",
+   "reason": "路径片段"
+  },
+  {
+   "en": " /",
+   "reason": "分隔符"
+  },
+  {
+   "en": " - ",
+   "reason": "分隔符"
+  },
+  {
+   "en": " | ",
+   "reason": "分隔符"
+  },
+  {
+   "en": " / ",
+   "reason": "分隔符"
+  },
+  {
+   "en": "- ",
+   "reason": "分隔符"
+  },
+  {
+   "en": " x ",
+   "reason": "尺寸分隔符"
+  },
+  {
+   "en": "webp",
+   "reason": "扩展名"
+  },
+  {
+   "en": "tiff",
+   "reason": "扩展名"
+  },
+  {
+   "en": "tif",
+   "reason": "扩展名"
+  },
+  {
+   "en": "png",
+   "reason": "扩展名"
+  },
+  {
+   "en": "jpg",
+   "reason": "扩展名"
+  },
+  {
+   "en": "jpeg",
+   "reason": "扩展名"
+  },
+  {
+   "en": "ico",
+   "reason": "扩展名"
+  },
+  {
+   "en": "gif",
+   "reason": "扩展名"
+  },
+  {
+   "en": "bmp",
+   "reason": "扩展名"
+  },
+  {
+   "en": "&BMP",
+   "reason": "扩展名"
+  },
+  {
+   "en": "&GIF",
+   "reason": "扩展名"
+  },
+  {
+   "en": "IC&O",
+   "reason": "扩展名"
+  },
+  {
+   "en": "JP&EG",
+   "reason": "扩展名"
+  },
+  {
+   "en": "&JPG",
+   "reason": "扩展名"
+  },
+  {
+   "en": "&PNG",
+   "reason": "扩展名"
+  },
+  {
+   "en": "&TIF",
+   "reason": "扩展名"
+  },
+  {
+   "en": "TIF&F",
+   "reason": "扩展名"
+  },
+  {
+   "en": "&WEBP",
+   "reason": "扩展名"
+  },
+  {
+   "en": "1:1",
+   "reason": "缩放比例"
+  },
+  {
+   "en": "50%",
+   "reason": "缩放比例"
+  },
+  {
+   "en": "100%",
+   "reason": "缩放比例"
+  },
+  {
+   "en": "200%",
+   "reason": "缩放比例"
+  },
+  {
+   "en": "Static",
+   "reason": "占位静态控件（运行时被替换）"
+  }
+ ]
+}

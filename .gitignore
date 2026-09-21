@@ -1,0 +1,44 @@
+# ============================================================
+# voidImageViewer-cn —— 版本库忽略规则
+# 原则：只收录"自研资产"（脚本 / 翻译表 / 文档 / 对照表），
+#       第三方程序体与本机运行时产物一律不入库。
+# ============================================================
+
+# --- 第三方软件二进制：再分发第三方程序体有版权风险，且体积大 ---
+#      使用者请自备正版安装包，用本仓库脚本自行生成汉化版
+*.exe
+*.dll
+backup/
+cn_pack/cn_out/
+cn_pack/备份/
+
+# --- 本机运行时产物（截图 / 探测结果），可由脚本复现 ---
+test/
+out/rt_cn/
+out/rt_installed/
+out/rt_pack/
+out/rt_stageA/
+out/runtime/
+
+# --- out/ 下的中间分析数据一律忽略，仅保留交付物 ---
+#     （hex dump、字符串池、引用表等均可由目标 exe 重新扫描得到）
+out/*
+!out/汉化对照表.html
+!out/汉化对照表.xlsx
+!out/对照表数据.json
+!out/make_xlsx.py
+!out/build_report.json
+
+# --- 本机用户配置与备份 ---
+*.ini
+*.bak
+
+# --- 工作区工具元数据 ---
+.workbuddy/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/

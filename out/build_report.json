@@ -1,0 +1,1461 @@
+{
+ "patched_abs": 145,
+ "patched_lea": 54,
+ "inplace": [
+  [
+   279463,
+   ":Pos %0.3f %0.3f, Zoom %0.3f %0.3f, Aspect Ratio %0.3f",
+   ":坐标 %0.3f %0.3f, 缩放 %0.3f %0.3f, 比例 %0.3f"
+  ]
+ ],
+ "skipped": [
+  [
+   280601,
+   "*.* (All Files)",
+   "*.* (所有文件)",
+   16,
+   19
+  ]
+ ],
+ "cave_rva": 397968,
+ "cave_len": 90,
+ "loops_fixed": [
+  52608,
+  65872,
+  65991,
+  79632,
+  79751
+ ],
+ "strings": {
+  "0x431d8": {
+   "en": "WebP Image",
+   "zh": "WebP 图像",
+   "newrva": 393216,
+   "enc": "ansi"
+  },
+  "0x431e8": {
+   "en": "TIFF Image",
+   "zh": "TIFF 图像",
+   "newrva": 393232,
+   "enc": "ansi"
+  },
+  "0x431f8": {
+   "en": "PNG Image",
+   "zh": "PNG 图像",
+   "newrva": 393248,
+   "enc": "ansi"
+  },
+  "0x43208": {
+   "en": "JPEG Image",
+   "zh": "JPEG 图像",
+   "newrva": 393264,
+   "enc": "ansi"
+  },
+  "0x43218": {
+   "en": "Icon File",
+   "zh": "图标文件",
+   "newrva": 393280,
+   "enc": "ansi"
+  },
+  "0x43228": {
+   "en": "Animated GIF Image",
+   "zh": "动态 GIF 图像",
+   "newrva": 393296,
+   "enc": "ansi"
+  },
+  "0x43240": {
+   "en": "Bitmap Image",
+   "zh": "位图图像",
+   "newrva": 393320,
+   "enc": "ansi"
+  },
+  "0x43280": {
+   "en": "&About",
+   "zh": "关于(&A)",
+   "newrva": 393336,
+   "enc": "ansi"
+  },
+  "0x43288": {
+   "en": "&Donate",
+   "zh": "捐赠(&D)",
+   "newrva": 393352,
+   "enc": "ansi"
+  },
+  "0x43290": {
+   "en": "Home &Page",
+   "zh": "主页(&P)",
+   "newrva": 393368,
+   "enc": "ansi"
+  },
+  "0x432a0": {
+   "en": "&Command Line Options",
+   "zh": "命令行选项(&C)",
+   "newrva": 393384,
+   "enc": "ansi"
+  },
+  "0x432b8": {
+   "en": "&Help",
+   "zh": "帮助(&H)",
+   "newrva": 393408,
+   "enc": "ansi"
+  },
+  "0x432c0": {
+   "en": "&Jump To...",
+   "zh": "跳转到(&J)...",
+   "newrva": 393424,
+   "enc": "ansi"
+  },
+  "0x432d0": {
+   "en": "&Shuffle",
+   "zh": "随机播放(&S)",
+   "newrva": 393448,
+   "enc": "ansi"
+  },
+  "0x432e0": {
+   "en": "&Descending",
+   "zh": "降序(&D)",
+   "newrva": 393472,
+   "enc": "ansi"
+  },
+  "0x432f0": {
+   "en": "&Ascending",
+   "zh": "升序(&A)",
+   "newrva": 393488,
+   "enc": "ansi"
+  },
+  "0x43300": {
+   "en": "Date &Created",
+   "zh": "创建日期(&C)",
+   "newrva": 393504,
+   "enc": "ansi"
+  },
+  "0x43310": {
+   "en": "Date &Modified",
+   "zh": "修改日期(&M)",
+   "newrva": 393528,
+   "enc": "ansi"
+  },
+  "0x43320": {
+   "en": "&Size",
+   "zh": "大小(&S)",
+   "newrva": 393552,
+   "enc": "ansi"
+  },
+  "0x43328": {
+   "en": "Full &Path and Filename",
+   "zh": "完整路径和文件名(&P)",
+   "newrva": 393568,
+   "enc": "ansi"
+  },
+  "0x43340": {
+   "en": "&Name",
+   "zh": "名称(&N)",
+   "newrva": 393600,
+   "enc": "ansi"
+  },
+  "0x43348": {
+   "en": "S&ort",
+   "zh": "排序(&O)",
+   "newrva": 393616,
+   "enc": "ansi"
+  },
+  "0x43350": {
+   "en": "&End",
+   "zh": "最后一个(&E)",
+   "newrva": 393632,
+   "enc": "ansi"
+  },
+  "0x43358": {
+   "en": "&Home",
+   "zh": "第一个(&H)",
+   "newrva": 393656,
+   "enc": "ansi"
+  },
+  "0x43360": {
+   "en": "P&revious",
+   "zh": "上一个(&R)",
+   "newrva": 393672,
+   "enc": "ansi"
+  },
+  "0x4336c": {
+   "en": "&Next",
+   "zh": "下一个(&N)",
+   "newrva": 393688,
+   "enc": "ansi"
+  },
+  "0x43378": {
+   "en": "&Navigate",
+   "zh": "导航(&N)",
+   "newrva": 393704,
+   "enc": "ansi"
+  },
+  "0x43388": {
+   "en": "R&eset Rate",
+   "zh": "重置速率(&E)",
+   "newrva": 393720,
+   "enc": "ansi"
+  },
+  "0x43398": {
+   "en": "&Last Frame",
+   "zh": "最后一帧(&L)",
+   "newrva": 393744,
+   "enc": "ansi"
+  },
+  "0x433a8": {
+   "en": "F&irst Frame",
+   "zh": "第一帧(&I)",
+   "newrva": 393768,
+   "enc": "ansi"
+  },
+  "0x433b8": {
+   "en": "Pre&vious Frame",
+   "zh": "上一帧(&V)",
+   "newrva": 393784,
+   "enc": "ansi"
+  },
+  "0x433c8": {
+   "en": "F&rame Step",
+   "zh": "单帧步进(&R)",
+   "newrva": 393800,
+   "enc": "ansi"
+  },
+  "0x433d8": {
+   "en": "Long Jump &Backward",
+   "zh": "长距离快退(&B)",
+   "newrva": 393824,
+   "enc": "ansi"
+  },
+  "0x433f0": {
+   "en": "Long Jump &Forward",
+   "zh": "长距离快进(&F)",
+   "newrva": 393848,
+   "enc": "ansi"
+  },
+  "0x43408": {
+   "en": "Short Jump &Backward",
+   "zh": "短距离快退(&B)",
+   "newrva": 393872,
+   "enc": "ansi"
+  },
+  "0x43420": {
+   "en": "Short Jump &Forward",
+   "zh": "短距离快进(&F)",
+   "newrva": 393896,
+   "enc": "ansi"
+  },
+  "0x43438": {
+   "en": "Jump &Backward",
+   "zh": "快退(&B)",
+   "newrva": 393920,
+   "enc": "ansi"
+  },
+  "0x43448": {
+   "en": "Jump &Forward",
+   "zh": "快进(&F)",
+   "newrva": 393936,
+   "enc": "ansi"
+  },
+  "0x43458": {
+   "en": "&Animation",
+   "zh": "动画(&A)",
+   "newrva": 393952,
+   "enc": "ansi"
+  },
+  "0x43468": {
+   "en": "Custom...",
+   "zh": "自定义...",
+   "newrva": 393968,
+   "enc": "ansi"
+  },
+  "0x43478": {
+   "en": "1 Minute",
+   "zh": "1 分钟",
+   "newrva": 393984,
+   "enc": "ansi"
+  },
+  "0x43488": {
+   "en": "50 Seconds",
+   "zh": "50 秒",
+   "newrva": 394000,
+   "enc": "ansi"
+  },
+  "0x43498": {
+   "en": "40 Seconds",
+   "zh": "40 秒",
+   "newrva": 394008,
+   "enc": "ansi"
+  },
+  "0x434a8": {
+   "en": "30 Seconds",
+   "zh": "30 秒",
+   "newrva": 394016,
+   "enc": "ansi"
+  },
+  "0x434b8": {
+   "en": "20 Seconds",
+   "zh": "20 秒",
+   "newrva": 394024,
+   "enc": "ansi"
+  },
+  "0x434c8": {
+   "en": "1&0 Seconds",
+   "zh": "10 秒(&0)",
+   "newrva": 394032,
+   "enc": "ansi"
+  },
+  "0x434d8": {
+   "en": "&9 Seconds",
+   "zh": "9 秒(&9)",
+   "newrva": 394048,
+   "enc": "ansi"
+  },
+  "0x434e8": {
+   "en": "&8 Seconds",
+   "zh": "8 秒(&8)",
+   "newrva": 394064,
+   "enc": "ansi"
+  },
+  "0x434f8": {
+   "en": "&7 Seconds",
+   "zh": "7 秒(&7)",
+   "newrva": 394080,
+   "enc": "ansi"
+  },
+  "0x43508": {
+   "en": "&6 Seconds",
+   "zh": "6 秒(&6)",
+   "newrva": 394096,
+   "enc": "ansi"
+  },
+  "0x43518": {
+   "en": "&5 Seconds",
+   "zh": "5 秒(&5)",
+   "newrva": 394112,
+   "enc": "ansi"
+  },
+  "0x43528": {
+   "en": "&4 Seconds",
+   "zh": "4 秒(&4)",
+   "newrva": 394128,
+   "enc": "ansi"
+  },
+  "0x43538": {
+   "en": "&3 Seconds",
+   "zh": "3 秒(&3)",
+   "newrva": 394144,
+   "enc": "ansi"
+  },
+  "0x43548": {
+   "en": "&2 Seconds",
+   "zh": "2 秒(&2)",
+   "newrva": 394160,
+   "enc": "ansi"
+  },
+  "0x43558": {
+   "en": "&1 Second",
+   "zh": "1 秒(&1)",
+   "newrva": 394176,
+   "enc": "ansi"
+  },
+  "0x43568": {
+   "en": "500 Milliseconds",
+   "zh": "500 毫秒",
+   "newrva": 394192,
+   "enc": "ansi"
+  },
+  "0x43580": {
+   "en": "250 Milliseconds",
+   "zh": "250 毫秒",
+   "newrva": 394208,
+   "enc": "ansi"
+  },
+  "0x43598": {
+   "en": "&Increase Rate",
+   "zh": "提高速率(&I)",
+   "newrva": 394224,
+   "enc": "ansi"
+  },
+  "0x435a8": {
+   "en": "&Decrease Rate",
+   "zh": "降低速率(&D)",
+   "newrva": 394248,
+   "enc": "ansi"
+  },
+  "0x435b8": {
+   "en": "&Rate",
+   "zh": "速率(&R)",
+   "newrva": 394272,
+   "enc": "ansi"
+  },
+  "0x435c0": {
+   "en": "&Play/Pause",
+   "zh": "播放/暂停(&P)",
+   "newrva": 394288,
+   "enc": "ansi"
+  },
+  "0x435d0": {
+   "en": "&Options...",
+   "zh": "选项(&O)...",
+   "newrva": 394312,
+   "enc": "ansi"
+  },
+  "0x435dc": {
+   "en": "&Never",
+   "zh": "从不(&N)",
+   "newrva": 394328,
+   "enc": "ansi"
+  },
+  "0x435e8": {
+   "en": "&While Playing Slideshow or Animating",
+   "zh": "播放幻灯片或动画时(&W)",
+   "newrva": 394344,
+   "enc": "ansi"
+  },
+  "0x43610": {
+   "en": "&Always",
+   "zh": "总是(&A)",
+   "newrva": 394376,
+   "enc": "ansi"
+  },
+  "0x43618": {
+   "en": "On &Top",
+   "zh": "窗口置顶(&T)",
+   "newrva": 394392,
+   "enc": "ansi"
+  },
+  "0x43620": {
+   "en": "Re&set",
+   "zh": "重置(&S)",
+   "newrva": 394416,
+   "enc": "ansi"
+  },
+  "0x43628": {
+   "en": "Move Cen&ter",
+   "zh": "居中(&T)",
+   "newrva": 394432,
+   "enc": "ansi"
+  },
+  "0x43638": {
+   "en": "Move Down Right",
+   "zh": "右下移",
+   "newrva": 394448,
+   "enc": "ansi"
+  },
+  "0x43648": {
+   "en": "Move Down Left",
+   "zh": "左下移",
+   "newrva": 394464,
+   "enc": "ansi"
+  },
+  "0x43658": {
+   "en": "Move Up Right",
+   "zh": "右上移",
+   "newrva": 394480,
+   "enc": "ansi"
+  },
+  "0x43668": {
+   "en": "Move Up Left",
+   "zh": "左上移",
+   "newrva": 394496,
+   "enc": "ansi"
+  },
+  "0x43678": {
+   "en": "Move &Right",
+   "zh": "右移(&R)",
+   "newrva": 394512,
+   "enc": "ansi"
+  },
+  "0x43688": {
+   "en": "Move &Left",
+   "zh": "左移(&L)",
+   "newrva": 394528,
+   "enc": "ansi"
+  },
+  "0x43698": {
+   "en": "Move &Down",
+   "zh": "下移(&D)",
+   "newrva": 394544,
+   "enc": "ansi"
+  },
+  "0x436a8": {
+   "en": "Move &Up",
+   "zh": "上移(&U)",
+   "newrva": 394560,
+   "enc": "ansi"
+  },
+  "0x436b4": {
+   "en": "&Reset",
+   "zh": "重置(&R)",
+   "newrva": 394576,
+   "enc": "ansi"
+  },
+  "0x436c0": {
+   "en": "Zoom &Out",
+   "zh": "缩小(&O)",
+   "newrva": 394592,
+   "enc": "ansi"
+  },
+  "0x436d0": {
+   "en": "Zoom &In",
+   "zh": "放大(&I)",
+   "newrva": 394608,
+   "enc": "ansi"
+  },
+  "0x436dc": {
+   "en": "&Zoom",
+   "zh": "缩放(&Z)",
+   "newrva": 394624,
+   "enc": "ansi"
+  },
+  "0x436e8": {
+   "en": "De&cre&ase Height",
+   "zh": "减小高度(&G)",
+   "newrva": 394640,
+   "enc": "ansi"
+  },
+  "0x43700": {
+   "en": "In&crease Height",
+   "zh": "增大高度(&C)",
+   "newrva": 394664,
+   "enc": "ansi"
+  },
+  "0x43718": {
+   "en": "D&ecrease Width",
+   "zh": "减小宽度(&E)",
+   "newrva": 394688,
+   "enc": "ansi"
+  },
+  "0x43728": {
+   "en": "I&ncrease Width",
+   "zh": "增大宽度(&N)",
+   "newrva": 394712,
+   "enc": "ansi"
+  },
+  "0x43738": {
+   "en": "&Decrease Size",
+   "zh": "减小尺寸(&D)",
+   "newrva": 394736,
+   "enc": "ansi"
+  },
+  "0x43748": {
+   "en": "&Increase Size",
+   "zh": "增大尺寸(&I)",
+   "newrva": 394760,
+   "enc": "ansi"
+  },
+  "0x43758": {
+   "en": "Pa&n && Scan",
+   "zh": "平移与扫描(&N)",
+   "newrva": 394784,
+   "enc": "ansi"
+  },
+  "0x43768": {
+   "en": "&Best Fit",
+   "zh": "最佳适应(&B)",
+   "newrva": 394808,
+   "enc": "ansi"
+  },
+  "0x43778": {
+   "en": "&Fill Window",
+   "zh": "填满窗口(&F)",
+   "newrva": 394832,
+   "enc": "ansi"
+  },
+  "0x43788": {
+   "en": "&Keep Aspect Ratio",
+   "zh": "保持宽高比(&K)",
+   "newrva": 394856,
+   "enc": "ansi"
+  },
+  "0x437a0": {
+   "en": "&Allow Shrinking",
+   "zh": "允许缩小(&A)",
+   "newrva": 394880,
+   "enc": "ansi"
+  },
+  "0x437b8": {
+   "en": "&Refresh",
+   "zh": "刷新(&R)",
+   "newrva": 394904,
+   "enc": "ansi"
+  },
+  "0x437c8": {
+   "en": "&Auto Fit",
+   "zh": "自动适应(&A)",
+   "newrva": 394920,
+   "enc": "ansi"
+  },
+  "0x437e8": {
+   "en": "&Window Size",
+   "zh": "窗口大小(&W)",
+   "newrva": 394944,
+   "enc": "ansi"
+  },
+  "0x437f8": {
+   "en": "&Slideshow",
+   "zh": "幻灯片(&S)",
+   "newrva": 394968,
+   "enc": "ansi"
+  },
+  "0x43808": {
+   "en": "F&ullscreen",
+   "zh": "全屏(&U)",
+   "newrva": 394984,
+   "enc": "ansi"
+  },
+  "0x43818": {
+   "en": "&Normal",
+   "zh": "标准(&N)",
+   "newrva": 395000,
+   "enc": "ansi"
+  },
+  "0x43820": {
+   "en": "&Compact",
+   "zh": "紧凑(&C)",
+   "newrva": 395016,
+   "enc": "ansi"
+  },
+  "0x43830": {
+   "en": "&Minimal",
+   "zh": "极简(&M)",
+   "newrva": 395032,
+   "enc": "ansi"
+  },
+  "0x43840": {
+   "en": "&Preset",
+   "zh": "预设(&P)",
+   "newrva": 395048,
+   "enc": "ansi"
+  },
+  "0x43848": {
+   "en": "&Controls",
+   "zh": "控件(&C)",
+   "newrva": 395064,
+   "enc": "ansi"
+  },
+  "0x43858": {
+   "en": "Status &Bar",
+   "zh": "状态栏(&B)",
+   "newrva": 395080,
+   "enc": "ansi"
+  },
+  "0x43864": {
+   "en": "&Menu",
+   "zh": "菜单(&M)",
+   "newrva": 395096,
+   "enc": "ansi"
+  },
+  "0x4386c": {
+   "en": "Frame",
+   "zh": "边框",
+   "newrva": 395112,
+   "enc": "ansi"
+  },
+  "0x43878": {
+   "en": "Caption",
+   "zh": "标题栏",
+   "newrva": 395120,
+   "enc": "ansi"
+  },
+  "0x43880": {
+   "en": "&View",
+   "zh": "视图(&V)",
+   "newrva": 395136,
+   "enc": "ansi"
+  },
+  "0x43888": {
+   "en": "Mo&ve to Folder...",
+   "zh": "移动到文件夹(&V)...",
+   "newrva": 395152,
+   "enc": "ansi"
+  },
+  "0x438a0": {
+   "en": "Copy to &Folder...",
+   "zh": "复制到文件夹(&F)...",
+   "newrva": 395184,
+   "enc": "ansi"
+  },
+  "0x438b8": {
+   "en": "Rotate Cou&nterclockwise",
+   "zh": "逆时针旋转(&N)",
+   "newrva": 395216,
+   "enc": "ansi"
+  },
+  "0x438d8": {
+   "en": "Rotate &Cloc&kwise",
+   "zh": "顺时针旋转(&K)",
+   "newrva": 395240,
+   "enc": "ansi"
+  },
+  "0x438ec": {
+   "en": "&Paste",
+   "zh": "粘贴(&P)",
+   "newrva": 395264,
+   "enc": "ansi"
+  },
+  "0x438f8": {
+   "en": "Cop&y Image",
+   "zh": "复制图像(&Y)",
+   "newrva": 395280,
+   "enc": "ansi"
+  },
+  "0x43908": {
+   "en": "Copy Filename",
+   "zh": "复制文件名",
+   "newrva": 395304,
+   "enc": "ansi"
+  },
+  "0x43918": {
+   "en": "&Copy",
+   "zh": "复制(&C)",
+   "newrva": 395320,
+   "enc": "ansi"
+  },
+  "0x43920": {
+   "en": "Cu&t",
+   "zh": "剪切(&T)",
+   "newrva": 395336,
+   "enc": "ansi"
+  },
+  "0x43928": {
+   "en": "&Edit",
+   "zh": "编辑(&E)",
+   "newrva": 395352,
+   "enc": "ansi"
+  },
+  "0x43930": {
+   "en": "E&xit",
+   "zh": "退出(&X)",
+   "newrva": 395368,
+   "enc": "ansi"
+  },
+  "0x43938": {
+   "en": "P&roperties",
+   "zh": "属性(&R)",
+   "newrva": 395384,
+   "enc": "ansi"
+  },
+  "0x43948": {
+   "en": "&Rename",
+   "zh": "重命名(&M)",
+   "newrva": 395400,
+   "enc": "ansi"
+  },
+  "0x43950": {
+   "en": "Delete (Permanently)",
+   "zh": "删除（永久删除）",
+   "newrva": 395416,
+   "enc": "ansi"
+  },
+  "0x43968": {
+   "en": "Delete (Recycle)",
+   "zh": "删除（移入回收站）",
+   "newrva": 395448,
+   "enc": "ansi"
+  },
+  "0x43980": {
+   "en": "&Delete",
+   "zh": "删除(&D)",
+   "newrva": 395480,
+   "enc": "ansi"
+  },
+  "0x43988": {
+   "en": "&Close",
+   "zh": "关闭(&C)",
+   "newrva": 395496,
+   "enc": "ansi"
+  },
+  "0x43990": {
+   "en": "Set &Desktop Wallpaper",
+   "zh": "设为桌面壁纸(&D)",
+   "newrva": 395512,
+   "enc": "ansi"
+  },
+  "0x439a8": {
+   "en": "&Print...",
+   "zh": "打印(&P)...",
+   "newrva": 395536,
+   "enc": "ansi"
+  },
+  "0x439b8": {
+   "en": "Pre&view...",
+   "zh": "预览(&V)...",
+   "newrva": 395552,
+   "enc": "ansi"
+  },
+  "0x439c8": {
+   "en": "&Edit...",
+   "zh": "编辑(&E)...",
+   "newrva": 395568,
+   "enc": "ansi"
+  },
+  "0x439d8": {
+   "en": "Open F&ile Location...",
+   "zh": "打开文件位置(&I)...",
+   "newrva": 395584,
+   "enc": "ansi"
+  },
+  "0x439f0": {
+   "en": "Add Everything Search...",
+   "zh": "添加 Everything 搜索...",
+   "newrva": 395616,
+   "enc": "ansi"
+  },
+  "0x43a10": {
+   "en": "Add Folder...",
+   "zh": "添加文件夹...",
+   "newrva": 395648,
+   "enc": "ansi"
+  },
+  "0x43a20": {
+   "en": "&Add File...",
+   "zh": "添加文件(&A)...",
+   "newrva": 395672,
+   "enc": "ansi"
+  },
+  "0x43a30": {
+   "en": "Open Everything &Search...",
+   "zh": "打开 Everything 搜索(&S)...",
+   "newrva": 395696,
+   "enc": "ansi"
+  },
+  "0x43a50": {
+   "en": "Open &Folder...",
+   "zh": "打开文件夹(&F)...",
+   "newrva": 395728,
+   "enc": "ansi"
+  },
+  "0x43a60": {
+   "en": "&Open File...",
+   "zh": "打开文件(&O)...",
+   "newrva": 395752,
+   "enc": "ansi"
+  },
+  "0x43a70": {
+   "en": "&File",
+   "zh": "文件(&F)",
+   "newrva": 395776,
+   "enc": "ansi"
+  },
+  "0x43a78": {
+   "en": "Controls",
+   "zh": "控件",
+   "newrva": 395792,
+   "enc": "ansi"
+  },
+  "0x43a84": {
+   "en": "View",
+   "zh": "视图",
+   "newrva": 395800,
+   "enc": "ansi"
+  },
+  "0x43a90": {
+   "en": "General",
+   "zh": "常规",
+   "newrva": 395808,
+   "enc": "ansi"
+  },
+  "0x43b68": {
+   "en": "minutes",
+   "zh": "分钟",
+   "newrva": 395816,
+   "enc": "ansi"
+  },
+  "0x43b70": {
+   "en": "seconds",
+   "zh": "秒",
+   "newrva": 395824,
+   "enc": "ansi"
+  },
+  "0x43b78": {
+   "en": "milliseconds",
+   "zh": "毫秒",
+   "newrva": 395832,
+   "enc": "ansi"
+  },
+  "0x43c10": {
+   "en": "Usage:\nvoidImageViewer.exe [/switches] [filename(s)]\n\nSwitches:\n/slideshow\tStart a slideshow.\n/fullscreen\tStart fullscreen.\n/maximized\tStart maximized.\n/window\t\tStart windowed.\n/ontop\t\tShow on top of other windows.\n/minimal\t\tBorderless window.\n/compact\t\tBordered window.\n/x <x> /y <y> /width <width> /height <height>\n\t\tSet the Window position and size.\n/rate <rate>\tSet the slideshow rate in milliseconds.\n/name\t\tSort by name.\n/path\t\tSort by full path and filename.\n/size\t\tSort by size.\n/dm\t\tSort by date modified.\n/dc\t\tSort by date created.\n/ascending\tSort in ascending order.\n/descending\tSort in descending order.\n/everything <search> Open files from an Everything search.\n/random <search>\tOpen random files from an Everything search.\n/shuffle\t\tShuffle playlist.\n/<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\tInstall association.\n/no<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\tUninstall association.\n/appdata\t\tSave settings in appdata.\n/noappdata\tSave settings in exe path.\n/startmenu\tAdd Start menu shortcuts.\n/nostartmenu\tRemove Start menu shortcuts.\n/install <path>\tInstall to the specified path.\n/install-options <...> Run with the specified options after installation.\n/uninstall <path>\tUninstall from the specified path.\n",
+   "zh": "用法:\nvoidImageViewer.exe [/开关] [文件名...]\n\n开关:\n/slideshow\t启动幻灯片播放。\n/fullscreen\t启动全屏。\n/maximized\t最大化启动。\n/window\t\t以窗口方式启动。\n/ontop\t\t窗口置顶显示。\n/minimal\t\t无边框窗口。\n/compact\t\t带边框窗口。\n/x <x> /y <y> /width <宽度> /height <高度>\n\t\t设置窗口位置与尺寸。\n/rate <速率>\t设置幻灯片速率（毫秒）。\n/name\t\t按名称排序。\n/path\t\t按完整路径和文件名排序。\n/size\t\t按大小排序。\n/dm\t\t按修改日期排序。\n/dc\t\t按创建日期排序。\n/ascending\t按升序排列。\n/descending\t按降序排列。\n/everything <搜索>\t打开 Everything 搜索得到的文件。\n/random <搜索>\t从 Everything 搜索结果中随机打开文件。\n/shuffle\t\t随机播放列表。\n/<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\t安装文件关联。\n/no<bmp|gif|ico|jpeg|jpg|png|tif|tiff|webp>\n\t\t卸载文件关联。\n/appdata\t\t将设置保存在 appdata 中。\n/noappdata\t将设置保存在 exe 所在路径。\n/startmenu\t添加开始菜单快捷方式。\n/nostartmenu\t删除开始菜单快捷方式。\n/install <路径>\t安装到指定路径。\n/install-options <...> 安装后以指定选项运行。\n/uninstall <路径>\t从指定路径卸载。\n",
+   "newrva": 395840,
+   "enc": "ansi"
+  },
+  "0x44138": {
+   "en": "Error %d: unable to copy %S to %S",
+   "zh": "错误 %d：无法将 %S 复制到 %S",
+   "newrva": 397104,
+   "enc": "ansi"
+  },
+  "0x44160": {
+   "en": "Everything not available",
+   "zh": "Everything 不可用",
+   "newrva": 397144,
+   "enc": "ansi"
+  },
+  "0x441d0": {
+   "en": "Auto Fit",
+   "zh": "自动适应",
+   "newrva": 397168,
+   "enc": "ansi"
+  },
+  "0x441e0": {
+   "en": "HALFTONE (Quality)",
+   "zh": "HALFTONE（高质量）",
+   "newrva": 397184,
+   "enc": "ansi"
+  },
+  "0x441f8": {
+   "en": "COLORONCOLOR (Performance)",
+   "zh": "COLORONCOLOR（高性能）",
+   "newrva": 397208,
+   "enc": "ansi"
+  },
+  "0x44350": {
+   "en": "POS: %d,%d RGB: %d,%d,%d",
+   "zh": "坐标: %d,%d RGB: %d,%d,%d",
+   "newrva": 397304,
+   "enc": "ansi"
+  },
+  "0x44388": {
+   "en": " KB)",
+   "zh": " KB）",
+   "newrva": 397344,
+   "enc": "ansi"
+  },
+  "0x443e0": {
+   "en": "Animation rate %0.3f",
+   "zh": "动画速率 %0.3f",
+   "newrva": 397352,
+   "enc": "ansi"
+  },
+  "0x443f8": {
+   "en": "Slideshow rate %d %S",
+   "zh": "幻灯片速率 %d %S",
+   "newrva": 397376,
+   "enc": "ansi"
+  },
+  "0x44470": {
+   "en": "Load Everything Search",
+   "zh": "载入 Everything 搜索",
+   "newrva": 397432,
+   "enc": "ansi"
+  },
+  "0x44488": {
+   "en": "Add Everything Search",
+   "zh": "添加 Everything 搜索",
+   "newrva": 397464,
+   "enc": "ansi"
+  },
+  "0x44698": {
+   "en": "Add Keyboard Shortcut",
+   "zh": "添加键盘快捷键",
+   "newrva": 397592,
+   "enc": "ansi"
+  },
+  "0x446b0": {
+   "en": "Edit Keyboard Shortcut",
+   "zh": "编辑键盘快捷键",
+   "newrva": 397616,
+   "enc": "ansi"
+  },
+  "0x446c8": {
+   "en": "Prev/Next",
+   "zh": "上一个/下一个",
+   "newrva": 397640,
+   "enc": "ansi"
+  },
+  "0x446d8": {
+   "en": "Next/Prev",
+   "zh": "下一个/上一个",
+   "newrva": 397664,
+   "enc": "ansi"
+  },
+  "0x446e4": {
+   "en": "Zoom",
+   "zh": "缩放",
+   "newrva": 397688,
+   "enc": "ansi"
+  },
+  "0x446f0": {
+   "en": "Previous Image",
+   "zh": "上一张图像",
+   "newrva": 397696,
+   "enc": "ansi"
+  },
+  "0x44700": {
+   "en": "Zoom Out",
+   "zh": "缩小",
+   "newrva": 397712,
+   "enc": "ansi"
+  },
+  "0x44710": {
+   "en": "Context Menu",
+   "zh": "上下文菜单",
+   "newrva": 397720,
+   "enc": "ansi"
+  },
+  "0x44720": {
+   "en": "Move Window",
+   "zh": "移动窗口",
+   "newrva": 397736,
+   "enc": "ansi"
+  },
+  "0x44730": {
+   "en": "1:1 Scroll",
+   "zh": "1:1 滚动",
+   "newrva": 397752,
+   "enc": "ansi"
+  },
+  "0x44740": {
+   "en": "Next Image",
+   "zh": "下一张图像",
+   "newrva": 397768,
+   "enc": "ansi"
+  },
+  "0x44750": {
+   "en": "Zoom In",
+   "zh": "放大",
+   "newrva": 397784,
+   "enc": "ansi"
+  },
+  "0x44758": {
+   "en": "Play/Pause Animation",
+   "zh": "播放/暂停动画",
+   "newrva": 397792,
+   "enc": "ansi"
+  },
+  "0x44770": {
+   "en": "Play/Pause Slideshow",
+   "zh": "播放/暂停幻灯片",
+   "newrva": 397816,
+   "enc": "ansi"
+  },
+  "0x44788": {
+   "en": "Scroll",
+   "zh": "滚动",
+   "newrva": 397840,
+   "enc": "ansi"
+  },
+  "0x44790": {
+   "en": "Move To",
+   "zh": "移动到",
+   "newrva": 397848,
+   "enc": "ansi"
+  },
+  "0x44798": {
+   "en": "Copy To",
+   "zh": "复制到",
+   "newrva": 397864,
+   "enc": "ansi"
+  },
+  "0x447a0": {
+   "en": "*.* (All Files)",
+   "zh": "*.* (所有文件)",
+   "newrva": 397880,
+   "enc": "ansi"
+  },
+  "0x447b8": {
+   "en": "Open Image",
+   "zh": "打开图像",
+   "newrva": 397904,
+   "enc": "ansi"
+  },
+  "0x447d0": {
+   "en": "All Image Files",
+   "zh": "所有图像文件",
+   "newrva": 397920,
+   "enc": "ansi"
+  },
+  "0x44819": {
+   "en": "*.* (All Files)",
+   "zh": "*.* (所有文件)",
+   "newrva": null,
+   "enc": "ansi"
+  },
+  "0x44968": {
+   "en": "Slideshow Play/Pause",
+   "zh": "幻灯片 播放/暂停",
+   "newrva": 397944,
+   "enc": "ansi"
+  },
+  "0x442c0": {
+   "en": "Slideshow playing",
+   "zh": "正在播放幻灯片",
+   "newrva": 397240,
+   "enc": "utf-16"
+  },
+  "0x442e8": {
+   "en": "Failed to load image.",
+   "zh": "无法加载图像。",
+   "newrva": 397256,
+   "enc": "utf-16"
+  },
+  "0x44318": {
+   "en": "File not found.",
+   "zh": "找不到文件。",
+   "newrva": 397272,
+   "enc": "utf-16"
+  },
+  "0x44338": {
+   "en": "Loading...",
+   "zh": "正在加载...",
+   "newrva": 397288,
+   "enc": "utf-16"
+  },
+  "0x44370": {
+   "en": "PRELOAD",
+   "zh": "预加载",
+   "newrva": 397336,
+   "enc": "utf-16"
+  },
+  "0x44410": {
+   "en": "milliseconds",
+   "zh": "毫秒",
+   "newrva": 397400,
+   "enc": "utf-16"
+  },
+  "0x44430": {
+   "en": "seconds",
+   "zh": "秒",
+   "newrva": 397408,
+   "enc": "utf-16"
+  },
+  "0x44440": {
+   "en": "minutes",
+   "zh": "分钟",
+   "newrva": 397416,
+   "enc": "utf-16"
+  },
+  "0x44450": {
+   "en": "hours",
+   "zh": "小时",
+   "newrva": 397424,
+   "enc": "utf-16"
+  },
+  "0x445c0": {
+   "en": "Actual Size",
+   "zh": "实际大小",
+   "newrva": 397496,
+   "enc": "utf-16"
+  },
+  "0x445d8": {
+   "en": "Best Fit",
+   "zh": "最佳适应",
+   "newrva": 397512,
+   "enc": "utf-16"
+  },
+  "0x445f0": {
+   "en": "Pause Slideshow",
+   "zh": "暂停幻灯片",
+   "newrva": 397528,
+   "enc": "utf-16"
+  },
+  "0x44610": {
+   "en": "Play Slideshow",
+   "zh": "播放幻灯片",
+   "newrva": 397544,
+   "enc": "utf-16"
+  },
+  "0x44630": {
+   "en": "Next Image",
+   "zh": "下一张图像",
+   "newrva": 397560,
+   "enc": "utf-16"
+  },
+  "0x44648": {
+   "en": "Previous Image",
+   "zh": "上一张图像",
+   "newrva": 397576,
+   "enc": "utf-16"
+  },
+  "0x443a7": {
+   "en": ":Pos %0.3f %0.3f, Zoom %0.3f %0.3f, Aspect Ratio %0.3f",
+   "zh": ":坐标 %0.3f %0.3f, 缩放 %0.3f %0.3f, 比例 %0.3f",
+   "newrva": null,
+   "enc": "ansi"
+  }
+ },
+ "dlg_hits": [
+  [
+   101,
+   "id=1021",
+   "&Store settings in %APPDATA%\\voidImageViewer",
+   "将设置保存到 %APPDATA%\\voidImageViewer(&S)"
+  ],
+  [
+   101,
+   "id=1019",
+   "Allow multiple &instances",
+   "允许多个实例(&I)"
+  ],
+  [
+   101,
+   "id=1020",
+   "Start &menu shortcuts",
+   "创建开始菜单快捷方式(&M)"
+  ],
+  [
+   101,
+   "id=4294967295",
+   "Associations",
+   "文件关联"
+  ],
+  [
+   101,
+   "id=1014",
+   "Check &All",
+   "全选(&A)"
+  ],
+  [
+   101,
+   "id=1024",
+   "Check &None",
+   "全不选(&N)"
+  ],
+  [
+   106,
+   "title",
+   "Options - Void Image Viewer",
+   "选项 - Void Image Viewer"
+  ],
+  [
+   106,
+   "id=1",
+   "OK",
+   "确定"
+  ],
+  [
+   106,
+   "id=2",
+   "Cancel",
+   "取消"
+  ],
+  [
+   107,
+   "id=4294967295",
+   "&Shrink blit mode:",
+   "缩小时位块传输模式(&S):"
+  ],
+  [
+   107,
+   "id=4294967295",
+   "&Magnify blit mode:",
+   "放大时位块传输模式(&M):"
+  ],
+  [
+   107,
+   "id=1050",
+   "Auto si&ze window:",
+   "自动调整窗口大小(&Z):"
+  ],
+  [
+   107,
+   "id=1028",
+   "&Play animations at least once in slideshow",
+   "幻灯片中动画至少播放一次(&P)"
+  ],
+  [
+   107,
+   "id=1048",
+   "Preload &next image",
+   "预加载下一张图像(&N)"
+  ],
+  [
+   107,
+   "id=1049",
+   "Cache &last image",
+   "缓存上一张图像(&L)"
+  ],
+  [
+   107,
+   "id=4294967295",
+   "&Windowed background color:",
+   "窗口模式背景色(&W):"
+  ],
+  [
+   107,
+   "id=4294967295",
+   "&Fullscreen background color:",
+   "全屏背景色(&F):"
+  ],
+  [
+   109,
+   "title",
+   "Set Custom Rate",
+   "设置自定义速率"
+  ],
+  [
+   109,
+   "id=1",
+   "OK",
+   "确定"
+  ],
+  [
+   109,
+   "id=2",
+   "Cancel",
+   "取消"
+  ],
+  [
+   109,
+   "id=4294967295",
+   "&Custom rate:",
+   "自定义速率(&C):"
+  ],
+  [
+   110,
+   "id=4294967295",
+   "&Left click action:",
+   "左键单击操作(&L):"
+  ],
+  [
+   110,
+   "id=4294967295",
+   "&Right click action:",
+   "右键单击操作(&R):"
+  ],
+  [
+   110,
+   "id=4294967295",
+   "&Mouse wheel action:",
+   "鼠标滚轮操作(&M):"
+  ],
+  [
+   110,
+   "id=4294967295",
+   "&Commands:",
+   "命令(&C):"
+  ],
+  [
+   110,
+   "id=4294967295",
+   "Settings for selected command",
+   "所选命令的设置"
+  ],
+  [
+   110,
+   "id=1023",
+   "&Add...",
+   "添加(&A)..."
+  ],
+  [
+   110,
+   "id=1024",
+   "&Edit...",
+   "编辑(&E)..."
+  ],
+  [
+   110,
+   "id=1033",
+   "Remo&ve",
+   "移除(&V)"
+  ],
+  [
+   121,
+   "title",
+   "About void Image Viewer",
+   "关于 void Image Viewer"
+  ],
+  [
+   121,
+   "id=1",
+   "OK",
+   "确定"
+  ],
+  [
+   121,
+   "id=2",
+   "Cancel",
+   "取消"
+  ],
+  [
+   123,
+   "title",
+   "Edit Keyboard Shortcut",
+   "编辑键盘快捷键"
+  ],
+  [
+   123,
+   "id=4294967295",
+   "Shortcut &key:",
+   "快捷键(&K):"
+  ],
+  [
+   123,
+   "id=4294967295",
+   "Shortcut key currently used by:",
+   "当前使用该快捷键的命令:"
+  ],
+  [
+   123,
+   "id=1",
+   "OK",
+   "确定"
+  ],
+  [
+   123,
+   "id=2",
+   "Cancel",
+   "取消"
+  ],
+  [
+   127,
+   "title",
+   "Rename",
+   "重命名"
+  ],
+  [
+   127,
+   "id=1",
+   "OK",
+   "确定"
+  ],
+  [
+   127,
+   "id=2",
+   "Cancel",
+   "取消"
+  ],
+  [
+   128,
+   "title",
+   "Jump To",
+   "跳转到"
+  ],
+  [
+   128,
+   "id=1",
+   "OK",
+   "确定"
+  ],
+  [
+   128,
+   "id=2",
+   "Cancel",
+   "取消"
+  ],
+  [
+   129,
+   "title",
+   "Search Everything",
+   "搜索 Everything"
+  ],
+  [
+   129,
+   "id=1021",
+   "Randomize",
+   "随机化"
+  ],
+  [
+   129,
+   "id=1",
+   "OK",
+   "确定"
+  ],
+  [
+   129,
+   "id=2",
+   "Cancel",
+   "取消"
+  ]
+ ]
+}
