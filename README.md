@@ -7,6 +7,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64-0078D4?logo=windows)
 ![Python](https://img.shields.io/badge/python-3.8%2B%20%C2%B7%20stdlib%20only-3776AB?logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
@@ -90,6 +91,9 @@ Void Image Viewer 是一款轻量的 Windows 看图工具，界面文本全部�
 │
 ├── *.py                        开发期侦察 / 分析脚本
 │                               （PE 解析、字符串扫描、运行时取证、构建等）
+├── README.md                   本文件
+├── LICENSE                     MIT 许可
+├── .gitattributes              换行符策略（强制 .bat 为 CRLF）
 └── .gitignore
 ```
 
@@ -153,7 +157,17 @@ Void Image Viewer 是一款轻量的 Windows 看图工具，界面文本全部�
 - 本项目与 Void Image Viewer 的作者及发行方**没有任何隶属、赞助、授权或背书关系**。相关商标与著作权归各自权利人所有。
 - 本工具仅**替换本地副本的界面显示文本**，不破解授权机制、不绕过付费或试用限制、不改变程序原有功能，也不用于绕过任何技术保护措施。
 - 生成物**仅供个人学习、研究与自用**。请勿将汉化后的程序用于商业再分发或任何侵犯原作者权益的用途。因使用本工具产生的一切后果由使用者自行承担。
-- 本仓库的原创代码与文档可自由用于个人学习与研究。**仓库当前未附带 LICENSE 文件**；如需以标准开源许可（MIT / Apache-2.0 / GPL-3.0 等）发布，请自行添加。
+- 本仓库的原创代码与文档以 **MIT 许可**开源，详见 [LICENSE](LICENSE)；该许可**仅适用于本仓库自身的内容**。
+
+---
+
+## 许可
+
+本仓库的原创代码、脚本与文档采用 [MIT License](LICENSE) 开源。
+
+> MIT License · Copyright (c) 2026 Sword6988
+
+**许可范围（重要）**：MIT 许可**仅覆盖本仓库自身的内容**（汉化脚本、翻译表、文档与对照表），**不覆盖 Void Image Viewer 本体**。Void Image Viewer 的著作权归其原作者所有，本仓库不包含、也不分发其任何程序文件。使用本工具生成汉化版程序后，该程序的使用仍受原软件许可协议的约束，请自行确认你的使用方式合规。
 
 ---
 
