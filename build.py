@@ -5,13 +5,14 @@
 """
 import struct, json, os, sys, hashlib
 
-sys.path.insert(0, r'C:\Users\Shibeng\.workbuddy\skills\win32-exe-localizer\scripts')
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, _HERE)
+sys.path.insert(0, os.path.join(_HERE, 'cn_pack'))   # pe_res_engine.py 所在目录
 from pe_res_engine import PE, load_resources, parse_dialog, enc_dialog, build_rsrc
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import translations as T
 
 SRC = r'C:\Program Files\voidImageViewer\voidImageViewer.exe'
-OUTDIR = r'D:\Desktop\软件汉化\out'
+OUTDIR = os.path.join(_HERE, 'out')
 os.makedirs(OUTDIR, exist_ok=True)
 
 # ------------------------------------------------ 载入

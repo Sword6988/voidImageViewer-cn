@@ -1,0 +1,8 @@
+# 统一换行符策略，保证跨平台 clone 后文件仍可正常使用
+* text=auto
+
+# Windows 批处理必须保持 CRLF，否则在非 Windows 环境 clone 后 cmd 无法正确解析
+*.bat text eol=crlf
+
+# Office 文件为二进制容器，不做任何换行符转换
+*.xlsx binary
